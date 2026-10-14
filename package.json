@@ -1,0 +1,22 @@
+{
+  "name": "indiabigmart",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "IndiaBigMart - Modern iOS-Style B2B Marketplace",
+  "scripts": {
+    "start": "node dev-server.js",
+    "dev": "node dev-server.js",
+    "build": "echo 'Static build ready'"
+  },
+  "keywords": [
+    "b2b",
+    "marketplace",
+    "indiabigmart",
+    "tailwind",
+    "ios-style",
+    "ecommerce"
+  ],
+  "author": "",
+  "license": "ISC"
+}

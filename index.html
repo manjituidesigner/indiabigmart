@@ -1,0 +1,2515 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IndiaBigMart B2B - India's Premier Online B2B Marketplace | Manufacturers & Suppliers</title>
+  <meta name="description" content="Source products directly from 87 Lakh+ verified Indian manufacturers, exporters, and wholesalers. Connect with 21 Cr+ buyers with secure payment protection." />
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter for Apple / iOS typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#fff7ed',
+              100: '#ffedd5',
+              200: '#fed7aa',
+              300: '#fdba74',
+              400: '#fb923c',
+              500: '#f97316', // Vibrant Warm Saffron
+              600: '#ea580c',
+              700: '#c2410c',
+              800: '#9a3412',
+              900: '#7c2d12',
+            },
+            tealbrand: {
+              500: '#00a699',
+              600: '#008b80',
+              700: '#007067',
+            },
+            navy: {
+              800: '#1e293b',
+              900: '#0f172a',
+              950: '#090d16',
+            }
+          },
+          boxShadow: {
+            'ios-sm': '0 2px 8px -1px rgba(15, 23, 42, 0.05)',
+            'ios': '0 8px 24px -4px rgba(15, 23, 42, 0.06), 0 2px 6px -1px rgba(15, 23, 42, 0.02)',
+            'ios-lg': '0 20px 40px -8px rgba(15, 23, 42, 0.08), 0 6px 16px -2px rgba(15, 23, 42, 0.03)',
+            'ios-modal': '0 30px 70px -15px rgba(15, 23, 42, 0.28)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    /* iOS Frosted Glass */
+    .ios-glass {
+      background: rgba(255, 255, 255, 0.82);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+    }
+    .ios-glass-dark {
+      background: rgba(15, 23, 42, 0.82);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+    }
+    /* Hide scrollbars */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="bg-[#f8fafc] text-slate-800 antialiased selection:bg-teal-500 selection:text-white">
+
+  <!-- TOP UTILITY / TRUST ANNOUNCEMENT BAR (iOS Micro-header) -->
+  <div class="bg-slate-900 text-slate-300 text-xs py-2 px-4 sm:px-8 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center space-x-6">
+        <span class="flex items-center gap-1.5 text-slate-300">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          India's Largest Online B2B Marketplace
+        </span>
+        <span class="hidden md:inline-flex items-center gap-1 text-slate-400">
+          <i data-lucide="shield-check" class="w-3.5 h-3.5 text-teal-400"></i>
+          100% Verified Sellers &amp; Payment Escrow
+        </span>
+      </div>
+      <div class="flex items-center space-x-5 text-slate-400">
+        <a href="tel:09696969696" class="hover:text-white transition flex items-center gap-1">
+          <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+          <span class="hidden sm:inline">Buyer Helpline:</span> +91 96969 69696
+        </a>
+        <a href="#footer-section" class="hover:text-white transition flex items-center gap-1">
+          <i data-lucide="help-circle" class="w-3.5 h-3.5"></i>
+          Help
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN STICKY NAVIGATION BAR (iOS Frosted Glassmorphism) -->
+  <header class="sticky top-0 z-40 ios-glass border-b border-slate-200/80 transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20 gap-3 lg:gap-6">
+        
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-xl text-slate-700 hover:bg-slate-100 transition" aria-label="Toggle menu">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+
+        <!-- Brand Logo (Clean Modern B2B Aesthetic) -->
+        <a href="/" class="flex items-center gap-2.5 shrink-0 group">
+          <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-brand-600 via-brand-500 to-amber-400 flex items-center justify-center text-white font-black text-xl shadow-md shadow-brand-500/20 group-hover:scale-105 transition-transform duration-200">
+            I
+          </div>
+          <div class="flex flex-col">
+            <div class="flex items-center gap-1">
+              <span class="text-xl font-extrabold tracking-tight text-slate-900">India<span class="text-brand-600">BigMart</span></span>
+              <span class="text-[10px] font-bold px-1.5 py-0.5 rounded-full bg-teal-50 text-teal-700 border border-teal-200 uppercase tracking-wide">B2B</span>
+            </div>
+            <span class="text-[10px] text-slate-400 font-medium tracking-wide -mt-0.5">Sourcing &amp; Manufacturers</span>
+          </div>
+        </a>
+
+        <!-- Location City Selector (iOS Dropdown Trigger) -->
+        <div class="relative hidden md:block shrink-0">
+          <button id="city-select-btn" type="button" class="h-11 px-3.5 rounded-2xl bg-slate-100/90 hover:bg-slate-200/80 text-slate-700 flex items-center gap-2 text-xs font-semibold transition border border-slate-200/60">
+            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-600 shrink-0"></i>
+            <span id="selected-city-label" class="max-w-[85px] truncate">All India</span>
+            <i data-lucide="chevron-down" class="w-3.5 h-3.5 text-slate-400 shrink-0"></i>
+          </button>
+
+          <!-- Dropdown Menu -->
+          <div id="city-dropdown" class="hidden absolute left-0 mt-2 w-64 bg-white rounded-2xl shadow-ios-lg border border-slate-200/80 p-3 z-50 animate-in fade-in zoom-in-95 duration-150">
+            <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider px-2 py-1">Popular Industrial Cities</div>
+            <div class="grid grid-cols-2 gap-1 mt-1 text-xs">
+              <button type="button" class="city-option text-left px-2.5 py-1.5 rounded-xl hover:bg-slate-100 text-slate-700 font-medium transition" data-city="All India">All India</button>
+              <button type="button" class="city-option text-left px-2.5 py-1.5 rounded-xl hover:bg-slate-100 text-slate-700 font-medium transition" data-city="Delhi NCR">Delhi NCR</button>
+              <button type="button" class="city-option text-left px-2.5 py-1.5 rounded-xl hover:bg-slate-100 text-slate-700 font-medium transition" data-city="Mumbai">Mumbai</button>
+              <button type="button" class="city-option text-left px-2.5 py-1.5 rounded-xl hover:bg-slate-100 text-slate-700 font-medium transition" data-city="Ahmedabad">Ahmedabad</button>
+              <button type="button" class="city-option text-left px-2.5 py-1.5 rounded-xl hover:bg-slate-100 text-slate-700 font-medium transition" data-city="Bengaluru">Bengaluru</button>
+              <button type="button" class="city-option text-left px-2.5 py-1.5 rounded-xl hover:bg-slate-100 text-slate-700 font-medium transition" data-city="Pune">Pune</button>
+              <button type="button" class="city-option text-left px-2.5 py-1.5 rounded-xl hover:bg-slate-100 text-slate-700 font-medium transition" data-city="Surat">Surat</button>
+              <button type="button" class="city-option text-left px-2.5 py-1.5 rounded-xl hover:bg-slate-100 text-slate-700 font-medium transition" data-city="Coimbatore">Coimbatore</button>
+              <button type="button" class="city-option text-left px-2.5 py-1.5 rounded-xl hover:bg-slate-100 text-slate-700 font-medium transition" data-city="Ludhiana">Ludhiana</button>
+              <button type="button" class="city-option text-left px-2.5 py-1.5 rounded-xl hover:bg-slate-100 text-slate-700 font-medium transition" data-city="Hyderabad">Hyderabad</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Smart Search Bar Capsule (iOS Style with Category Pill + Visual Search + Voice) -->
+        <div class="flex-1 max-w-2xl relative">
+          <form id="main-search-form" class="h-12 bg-white rounded-full border border-slate-200/90 shadow-ios-sm flex items-center pl-2 pr-1.5 transition-all focus-within:border-brand-500 focus-within:ring-4 focus-within:ring-brand-500/10">
+            
+            <!-- Category Filter Trigger -->
+            <div class="relative hidden sm:block shrink-0">
+              <button id="search-category-btn" type="button" class="h-8 px-3 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center gap-1.5 text-xs font-semibold transition">
+                <span id="selected-category-label">All</span>
+                <i data-lucide="chevron-down" class="w-3 h-3 text-slate-400"></i>
+              </button>
+
+              <div id="search-category-dropdown" class="hidden absolute left-0 mt-2 w-48 bg-white rounded-2xl shadow-ios-lg border border-slate-200/80 p-2 z-50">
+                <button type="button" class="search-cat-option w-full text-left px-3 py-1.5 rounded-xl hover:bg-slate-100 text-xs font-medium text-slate-700" data-cat="All">All Categories</button>
+                <button type="button" class="search-cat-option w-full text-left px-3 py-1.5 rounded-xl hover:bg-slate-100 text-xs font-medium text-slate-700" data-cat="Building">Building &amp; Construction</button>
+                <button type="button" class="search-cat-option w-full text-left px-3 py-1.5 rounded-xl hover:bg-slate-100 text-xs font-medium text-slate-700" data-cat="Machinery">Industrial Machinery</button>
+                <button type="button" class="search-cat-option w-full text-left px-3 py-1.5 rounded-xl hover:bg-slate-100 text-xs font-medium text-slate-700" data-cat="Packaging">Packaging Machines</button>
+                <button type="button" class="search-cat-option w-full text-left px-3 py-1.5 rounded-xl hover:bg-slate-100 text-xs font-medium text-slate-700" data-cat="Electrical">Electrical &amp; Power</button>
+                <button type="button" class="search-cat-option w-full text-left px-3 py-1.5 rounded-xl hover:bg-slate-100 text-xs font-medium text-slate-700" data-cat="Pharma">Medical &amp; Pharma</button>
+              </div>
+            </div>
+
+            <div class="h-4 w-[1px] bg-slate-200 mx-2 hidden sm:block"></div>
+
+            <!-- Search Input -->
+            <input 
+              id="main-search-input" 
+              type="text" 
+              placeholder="Enter product, machine, or service name..." 
+              class="w-full bg-transparent border-none outline-none text-xs sm:text-sm text-slate-800 placeholder-slate-400 px-2 font-normal" 
+              autocomplete="off"
+            />
+
+            <!-- Image Search Tool -->
+            <button type="button" title="Search by Photo" class="p-2 text-slate-400 hover:text-slate-600 transition rounded-full hover:bg-slate-100" onclick="showToast('Visual Search enabled: Upload machine or product photo.')">
+              <i data-lucide="camera" class="w-4 h-4"></i>
+            </button>
+
+            <!-- Search Submit Action (iOS Pill Button) -->
+            <button type="submit" class="h-9 px-4 sm:px-5 rounded-full bg-gradient-to-r from-brand-600 to-brand-500 hover:from-brand-700 hover:to-brand-600 text-white text-xs font-bold flex items-center gap-1.5 shadow-sm transition active:scale-95 shrink-0">
+              <i data-lucide="search" class="w-3.5 h-3.5"></i>
+              <span class="hidden sm:inline">Search</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Right Side Buyer & Seller Actions (Clean iOS Pill Elements) -->
+        <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+          
+          <!-- Post Requirement (Primary CTA) -->
+          <button type="button" class="trigger-rfq-modal h-11 px-4 sm:px-5 rounded-2xl bg-teal-600 hover:bg-teal-700 text-white text-xs font-bold flex items-center gap-1.5 shadow-sm hover:shadow transition active:scale-95">
+            <i data-lucide="file-plus" class="w-3.5 h-3.5"></i>
+            <span class="hidden sm:inline">Post Requirement</span>
+            <span class="sm:hidden">RFQ</span>
+          </button>
+
+          <!-- Sell on IndiaBigMart CTA -->
+          <a href="#sell-section" class="hidden xl:flex items-center gap-1.5 text-xs font-bold text-slate-700 hover:text-brand-600 px-3 py-2 rounded-xl hover:bg-slate-100 transition">
+            <i data-lucide="store" class="w-4 h-4 text-brand-600"></i>
+            <span>Sell</span>
+          </a>
+
+          <!-- Messages Link -->
+          <button type="button" onclick="showToast('No new buyer inquiries yet.')" class="relative p-2.5 rounded-2xl hover:bg-slate-100 text-slate-600 transition" title="Buyer Inquiries &amp; Messages">
+            <i data-lucide="message-square" class="w-5 h-5"></i>
+            <span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-brand-500"></span>
+          </button>
+
+          <!-- Sign In / User Profile -->
+          <button type="button" onclick="showToast('Sign in / OTP verification opened')" class="h-11 px-3 sm:px-4 rounded-2xl border border-slate-200/90 hover:bg-slate-100 text-slate-800 text-xs font-bold flex items-center gap-2 transition">
+            <i data-lucide="user" class="w-4 h-4 text-slate-500"></i>
+            <span class="hidden md:inline">Sign In</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- QUICK SECTOR CATEGORY BAR (Smooth iOS Segmented Scrollbar) -->
+  <nav class="bg-white/90 border-b border-slate-200/60 sticky top-20 z-30 shadow-ios-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center space-x-2 py-3 overflow-x-auto no-scrollbar text-xs font-semibold">
+        <button class="cat-pill shrink-0 px-4 py-2 rounded-xl bg-slate-900 text-white shadow-sm transition active:scale-95" data-target="trending-section">
+          All Sectors
+        </button>
+        <button class="cat-pill shrink-0 px-4 py-2 rounded-xl bg-white text-slate-700 border border-slate-200/80 hover:bg-slate-50 transition active:scale-95 flex items-center gap-1.5" data-target="sec-construction">
+          <i data-lucide="hard-hat" class="w-3.5 h-3.5 text-amber-500"></i>
+          Building &amp; Construction
+        </button>
+        <button class="cat-pill shrink-0 px-4 py-2 rounded-xl bg-white text-slate-700 border border-slate-200/80 hover:bg-slate-50 transition active:scale-95 flex items-center gap-1.5" data-target="sec-machinery">
+          <i data-lucide="cog" class="w-3.5 h-3.5 text-blue-500"></i>
+          Industrial Machinery
+        </button>
+        <button class="cat-pill shrink-0 px-4 py-2 rounded-xl bg-white text-slate-700 border border-slate-200/80 hover:bg-slate-50 transition active:scale-95 flex items-center gap-1.5" data-target="sec-packaging">
+          <i data-lucide="package" class="w-3.5 h-3.5 text-indigo-500"></i>
+          Packaging Machines
+        </button>
+        <button class="cat-pill shrink-0 px-4 py-2 rounded-xl bg-white text-slate-700 border border-slate-200/80 hover:bg-slate-50 transition active:scale-95 flex items-center gap-1.5" data-target="sec-electrical">
+          <i data-lucide="zap" class="w-3.5 h-3.5 text-yellow-500"></i>
+          Electrical &amp; Solar
+        </button>
+        <button class="cat-pill shrink-0 px-4 py-2 rounded-xl bg-white text-slate-700 border border-slate-200/80 hover:bg-slate-50 transition active:scale-95 flex items-center gap-1.5" data-target="sec-pharma">
+          <i data-lucide="activity" class="w-3.5 h-3.5 text-rose-500"></i>
+          Medical &amp; Pharma
+        </button>
+        <button class="cat-pill shrink-0 px-4 py-2 rounded-xl bg-white text-slate-700 border border-slate-200/80 hover:bg-slate-50 transition active:scale-95 flex items-center gap-1.5" data-target="sec-chemicals">
+          <i data-lucide="flask-conical" class="w-3.5 h-3.5 text-emerald-500"></i>
+          Chemicals &amp; Polymers
+        </button>
+        <button class="cat-pill shrink-0 px-4 py-2 rounded-xl bg-white text-slate-700 border border-slate-200/80 hover:bg-slate-50 transition active:scale-95 flex items-center gap-1.5" data-target="sec-trust">
+          <i data-lucide="shield-check" class="w-3.5 h-3.5 text-teal-500"></i>
+          Pay with IndiaBigMart
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="app-main">
+    <!-- ========================================== -->
+    <!-- VIEW 1: HOME PAGE VIEW                     -->
+    <!-- ========================================== -->
+    <div id="home-view">
+      <!-- ========================================== -->
+      <!-- TRENDING ON INDIABIGMART (Modern iOS Style) -->
+      <!-- ========================================== -->
+      <section id="trending-section" class="py-8 sm:py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- iOS Sleek Gradient Showcase Container -->
+      <div class="relative rounded-3xl p-6 sm:p-8 md:p-10 bg-gradient-to-br from-[#1e1b4b] via-[#241442] to-[#0f172a] shadow-ios-lg border border-white/10 overflow-hidden">
+        
+        <!-- Subtle Ambient Background Glows -->
+        <div class="absolute -top-24 -left-24 w-80 h-80 bg-brand-500/15 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -right-24 w-80 h-80 bg-teal-500/15 rounded-full blur-3xl pointer-events-none"></div>
+
+        <!-- Section Top Header Bar -->
+        <div class="relative z-10 flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-[11px] font-bold text-amber-300 uppercase tracking-widest mb-2">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              Live Sourcing Demand
+            </div>
+            <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-white flex items-center gap-3">
+              <span>Trending on IndiaBigMart</span>
+            </h1>
+            <p class="text-xs sm:text-sm text-slate-300 mt-1 max-w-xl">
+              Most sourced industrial equipment, raw materials &amp; commercial products across India today.
+            </p>
+          </div>
+
+          <!-- Carousel Navigation & Filter Controls -->
+          <div class="flex items-center gap-2 shrink-0 self-start sm:self-auto">
+            <div class="hidden md:flex items-center gap-1.5 bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-1 text-xs text-white font-medium">
+              <button type="button" class="trending-filter-btn px-3 py-1.5 rounded-xl bg-white text-slate-900 font-bold shadow-sm transition" data-filter="all">All 18 Items</button>
+              <button type="button" class="trending-filter-btn px-3 py-1.5 rounded-xl hover:bg-white/10 transition" data-filter="industrial">Industrial</button>
+              <button type="button" class="trending-filter-btn px-3 py-1.5 rounded-xl hover:bg-white/10 transition" data-filter="commercial">Consumer</button>
+            </div>
+
+            <!-- Carousel Pagination Arrow Buttons -->
+            <div class="flex items-center gap-1.5 ml-2">
+              <button id="trending-prev-btn" type="button" title="Previous Page" class="w-10 h-10 rounded-2xl bg-white/10 hover:bg-white/20 active:scale-95 backdrop-blur-md border border-white/15 flex items-center justify-center text-white transition">
+                <i data-lucide="chevron-left" class="w-5 h-5"></i>
+              </button>
+              <button id="trending-next-btn" type="button" title="Next Page" class="w-10 h-10 rounded-2xl bg-white/10 hover:bg-white/20 active:scale-95 backdrop-blur-md border border-white/15 flex items-center justify-center text-white transition">
+                <i data-lucide="chevron-right" class="w-5 h-5"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 18 Trending Cards Grid (6 Columns x 3 Rows on Desktop) -->
+        <div id="trending-grid" class="relative z-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3.5 sm:gap-4.5">
+          
+          <!-- Card 1: Electric Scooter -->
+          <div 
+            onclick="showListingView('Electric Scooter')" 
+            class="trending-card bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col items-center text-center group cursor-pointer border border-white/40"
+            data-category="industrial"
+          >
+            <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-slate-50 flex items-center justify-center p-2 mb-3 overflow-hidden group-hover:scale-105 transition-transform duration-300 border border-slate-100">
+              <img 
+                src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=300&q=80" 
+                alt="Electric Scooter" 
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <h3 class="text-xs sm:text-sm font-bold text-slate-800 group-hover:text-brand-600 transition tracking-tight line-clamp-2 min-h-[36px] flex items-center justify-center">
+              Electric Scooter
+            </h3>
+            <span class="mt-2 text-[10px] font-semibold text-teal-600 opacity-90 group-hover:opacity-100 flex items-center gap-1">
+              <span>View Suppliers</span>
+              <i data-lucide="arrow-right" class="w-3 h-3"></i>
+            </span>
+          </div>
+
+          <!-- Card 2: Aromatic Incense Sticks -->
+          <div 
+            onclick="showListingView('Aromatic Incense Sticks')" 
+            class="trending-card bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col items-center text-center group cursor-pointer border border-white/40"
+            data-category="commercial"
+          >
+            <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-slate-50 flex items-center justify-center p-2 mb-3 overflow-hidden group-hover:scale-105 transition-transform duration-300 border border-slate-100">
+              <img 
+                src="https://images.unsplash.com/photo-1602928321079-5ac89c34aa09?auto=format&fit=crop&w=300&q=80" 
+                alt="Aromatic Incense Sticks" 
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <h3 class="text-xs sm:text-sm font-bold text-slate-800 group-hover:text-brand-600 transition tracking-tight line-clamp-2 min-h-[36px] flex items-center justify-center">
+              Aromatic Incense Sticks
+            </h3>
+            <span class="mt-2 text-[10px] font-semibold text-teal-600 opacity-90 group-hover:opacity-100 flex items-center gap-1">
+              <span>View Suppliers</span>
+              <i data-lucide="arrow-right" class="w-3 h-3"></i>
+            </span>
+          </div>
+
+          <!-- Card 3: Kamadhenu Cow and Calf Statue -->
+          <div 
+            onclick="showListingView('Vastu Accessories', 'God & Goddess Statues > Vastu Pyramid & Accessories')" 
+            class="trending-card bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col items-center text-center group cursor-pointer border border-white/40"
+            data-category="commercial"
+          >
+            <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-slate-50 flex items-center justify-center p-2 mb-3 overflow-hidden group-hover:scale-105 transition-transform duration-300 border border-slate-100">
+              <img 
+                src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=300&q=80" 
+                alt="Kamadhenu Cow and Calf Statue" 
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <h3 class="text-xs sm:text-sm font-bold text-slate-800 group-hover:text-brand-600 transition tracking-tight line-clamp-2 min-h-[36px] flex items-center justify-center">
+              Kamadhenu Cow and Calf Statue
+            </h3>
+            <span class="mt-2 text-[10px] font-semibold text-teal-600 opacity-90 group-hover:opacity-100 flex items-center gap-1">
+              <span>View Suppliers</span>
+              <i data-lucide="arrow-right" class="w-3 h-3"></i>
+            </span>
+          </div>
+
+          <!-- Card 4: Dupion Silk -->
+          <div 
+            onclick="showListingView('Dupion Silk')" 
+            class="trending-card bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col items-center text-center group cursor-pointer border border-white/40"
+            data-category="commercial"
+          >
+            <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-slate-50 flex items-center justify-center p-2 mb-3 overflow-hidden group-hover:scale-105 transition-transform duration-300 border border-slate-100">
+              <img 
+                src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=300&q=80" 
+                alt="Dupion Silk" 
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <h3 class="text-xs sm:text-sm font-bold text-slate-800 group-hover:text-brand-600 transition tracking-tight line-clamp-2 min-h-[36px] flex items-center justify-center">
+              Dupion Silk
+            </h3>
+            <span class="mt-2 text-[10px] font-semibold text-teal-600 opacity-90 group-hover:opacity-100 flex items-center gap-1">
+              <span>View Suppliers</span>
+              <i data-lucide="arrow-right" class="w-3 h-3"></i>
+            </span>
+          </div>
+
+          <!-- Card 5: Income Tax Consultant -->
+          <div 
+            onclick="showListingView('Income Tax Consultant')" 
+            class="trending-card bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col items-center text-center group cursor-pointer border border-white/40"
+            data-category="commercial"
+          >
+            <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-slate-50 flex items-center justify-center p-2 mb-3 overflow-hidden group-hover:scale-105 transition-transform duration-300 border border-slate-100">
+              <img 
+                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=300&q=80" 
+                alt="Income Tax Consultant" 
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <h3 class="text-xs sm:text-sm font-bold text-slate-800 group-hover:text-brand-600 transition tracking-tight line-clamp-2 min-h-[36px] flex items-center justify-center">
+              Income Tax Consultant
+            </h3>
+            <span class="mt-2 text-[10px] font-semibold text-teal-600 opacity-90 group-hover:opacity-100 flex items-center gap-1">
+              <span>View Suppliers</span>
+              <i data-lucide="arrow-right" class="w-3 h-3"></i>
+            </span>
+          </div>
+
+          <!-- Card 6: Air Hose Pipe -->
+          <div 
+            onclick="showListingView('Air Hose Pipe')" 
+            class="trending-card bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col items-center text-center group cursor-pointer border border-white/40"
+            data-category="industrial"
+          >
+            <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-slate-50 flex items-center justify-center p-2 mb-3 overflow-hidden group-hover:scale-105 transition-transform duration-300 border border-slate-100">
+              <img 
+                src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=300&q=80" 
+                alt="Air Hose Pipe" 
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <h3 class="text-xs sm:text-sm font-bold text-slate-800 group-hover:text-brand-600 transition tracking-tight line-clamp-2 min-h-[36px] flex items-center justify-center">
+              Air Hose Pipe
+            </h3>
+            <span class="mt-2 text-[10px] font-semibold text-teal-600 opacity-90 group-hover:opacity-100 flex items-center gap-1">
+              <span>View Suppliers</span>
+              <i data-lucide="arrow-right" class="w-3 h-3"></i>
+            </span>
+          </div>
+
+          <!-- Card 7: Printed Labels -->
+          <div 
+            onclick="showListingView('Printed Labels')" 
+            class="trending-card bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col items-center text-center group cursor-pointer border border-white/40"
+            data-category="industrial"
+          >
+            <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-slate-50 flex items-center justify-center p-2 mb-3 overflow-hidden group-hover:scale-105 transition-transform duration-300 border border-slate-100">
+              <img 
+                src="https://images.unsplash.com/photo-1607344645866-009c320b5ab8?auto=format&fit=crop&w=300&q=80" 
+                alt="Printed Labels" 
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <h3 class="text-xs sm:text-sm font-bold text-slate-800 group-hover:text-brand-600 transition tracking-tight line-clamp-2 min-h-[36px] flex items-center justify-center">
+              Printed Labels
+            </h3>
+            <span class="mt-2 text-[10px] font-semibold text-teal-600 opacity-90 group-hover:opacity-100 flex items-center gap-1">
+              <span>View Suppliers</span>
+              <i data-lucide="arrow-right" class="w-3 h-3"></i>
+            </span>
+          </div>
+
+          <!-- Card 8: Ammonium Bromide -->
+          <div 
+            onclick="openQuoteModal('Ammonium Bromide (AR / Pharma Grade)', '₹320 / Kg', 'Gujarat Chem Bio')" 
+            class="trending-card bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col items-center text-center group cursor-pointer border border-white/40"
+            data-category="industrial"
+          >
+            <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-slate-50 flex items-center justify-center p-2 mb-3 overflow-hidden group-hover:scale-105 transition-transform duration-300 border border-slate-100">
+              <img 
+                src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=300&q=80" 
+                alt="Ammonium Bromide" 
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <h3 class="text-xs sm:text-sm font-bold text-slate-800 group-hover:text-brand-600 transition tracking-tight line-clamp-2 min-h-[36px] flex items-center justify-center">
+              Ammonium Bromide
+            </h3>
+            <span class="mt-2 text-[10px] font-semibold text-teal-600 opacity-90 group-hover:opacity-100 flex items-center gap-1">
+              <span>View Suppliers</span>
+              <i data-lucide="arrow-right" class="w-3 h-3"></i>
+            </span>
+          </div>
+
+          <!-- Card 9: TMT Bars -->
+          <div 
+            onclick="openQuoteModal('TMT Steel Bars (Fe 550D)', '₹54,000 / Metric Ton', 'Raipur Ispat &amp; Steel')" 
+            class="trending-card bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col items-center text-center group cursor-pointer border border-white/40"
+            data-category="industrial"
+          >
+            <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-slate-50 flex items-center justify-center p-2 mb-3 overflow-hidden group-hover:scale-105 transition-transform duration-300 border border-slate-100">
+              <img 
+                src="https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=300&q=80" 
+                alt="TMT Bars" 
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <h3 class="text-xs sm:text-sm font-bold text-slate-800 group-hover:text-brand-600 transition tracking-tight line-clamp-2 min-h-[36px] flex items-center justify-center">
+              TMT Bars
+            </h3>
+            <span class="mt-2 text-[10px] font-semibold text-teal-600 opacity-90 group-hover:opacity-100 flex items-center gap-1">
+              <span>View Suppliers</span>
+              <i data-lucide="arrow-right" class="w-3 h-3"></i>
+            </span>
+          </div>
+
+          <!-- Card 10: Disposable Toothbrushes -->
+          <div 
+            onclick="showListingView('Disposable Toothbrushes')" 
+            class="trending-card bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col items-center text-center group cursor-pointer border border-white/40"
+            data-category="commercial"
+          >
+            <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-slate-50 flex items-center justify-center p-2 mb-3 overflow-hidden group-hover:scale-105 transition-transform duration-300 border border-slate-100">
+              <img 
+                src="https://images.unsplash.com/photo-1559591937-e16886e927eb?auto=format&fit=crop&w=300&q=80" 
+                alt="Disposable Toothbrushes" 
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <h3 class="text-xs sm:text-sm font-bold text-slate-800 group-hover:text-brand-600 transition tracking-tight line-clamp-2 min-h-[36px] flex items-center justify-center">
+              Disposable Toothbrushes
+            </h3>
+            <span class="mt-2 text-[10px] font-semibold text-teal-600 opacity-90 group-hover:opacity-100 flex items-center gap-1">
+              <span>View Suppliers</span>
+              <i data-lucide="arrow-right" class="w-3 h-3"></i>
+            </span>
+          </div>
+
+          <!-- Card 11: Acrylic Crockery -->
+          <div 
+            onclick="showListingView('Acrylic Crockery')" 
+            class="trending-card bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col items-center text-center group cursor-pointer border border-white/40"
+            data-category="commercial"
+          >
+            <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-slate-50 flex items-center justify-center p-2 mb-3 overflow-hidden group-hover:scale-105 transition-transform duration-300 border border-slate-100">
+              <img 
+                src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?auto=format&fit=crop&w=300&q=80" 
+                alt="Acrylic Crockery" 
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <h3 class="text-xs sm:text-sm font-bold text-slate-800 group-hover:text-brand-600 transition tracking-tight line-clamp-2 min-h-[36px] flex items-center justify-center">
+              Acrylic Crockery
+            </h3>
+            <span class="mt-2 text-[10px] font-semibold text-teal-600 opacity-90 group-hover:opacity-100 flex items-center gap-1">
+              <span>View Suppliers</span>
+              <i data-lucide="arrow-right" class="w-3 h-3"></i>
+            </span>
+          </div>
+
+          <!-- Card 12: Aluminium False Ceilings -->
+          <div 
+            onclick="showListingView('Aluminium False Ceilings')" 
+            class="trending-card bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col items-center text-center group cursor-pointer border border-white/40"
+            data-category="industrial"
+          >
+            <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-slate-50 flex items-center justify-center p-2 mb-3 overflow-hidden group-hover:scale-105 transition-transform duration-300 border border-slate-100">
+              <img 
+                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=300&q=80" 
+                alt="Aluminium False Ceilings" 
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <h3 class="text-xs sm:text-sm font-bold text-slate-800 group-hover:text-brand-600 transition tracking-tight line-clamp-2 min-h-[36px] flex items-center justify-center">
+              Aluminium False Ceilings
+            </h3>
+            <span class="mt-2 text-[10px] font-semibold text-teal-600 opacity-90 group-hover:opacity-100 flex items-center gap-1">
+              <span>View Suppliers</span>
+              <i data-lucide="arrow-right" class="w-3 h-3"></i>
+            </span>
+          </div>
+
+          <!-- Card 13: Air Regulators -->
+          <div 
+            onclick="showListingView('Air Regulators')" 
+            class="trending-card bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col items-center text-center group cursor-pointer border border-white/40"
+            data-category="industrial"
+          >
+            <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-slate-50 flex items-center justify-center p-2 mb-3 overflow-hidden group-hover:scale-105 transition-transform duration-300 border border-slate-100">
+              <img 
+                src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=300&q=80" 
+                alt="Air Regulators" 
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <h3 class="text-xs sm:text-sm font-bold text-slate-800 group-hover:text-brand-600 transition tracking-tight line-clamp-2 min-h-[36px] flex items-center justify-center">
+              Air Regulators
+            </h3>
+            <span class="mt-2 text-[10px] font-semibold text-teal-600 opacity-90 group-hover:opacity-100 flex items-center gap-1">
+              <span>View Suppliers</span>
+              <i data-lucide="arrow-right" class="w-3 h-3"></i>
+            </span>
+          </div>
+
+          <!-- Card 14: AC Power Supply -->
+          <div 
+            onclick="showListingView('AC Power Supply')" 
+            class="trending-card bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col items-center text-center group cursor-pointer border border-white/40"
+            data-category="industrial"
+          >
+            <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-slate-50 flex items-center justify-center p-2 mb-3 overflow-hidden group-hover:scale-105 transition-transform duration-300 border border-slate-100">
+              <img 
+                src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=300&q=80" 
+                alt="AC Power Supply" 
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <h3 class="text-xs sm:text-sm font-bold text-slate-800 group-hover:text-brand-600 transition tracking-tight line-clamp-2 min-h-[36px] flex items-center justify-center">
+              AC Power Supply
+            </h3>
+            <span class="mt-2 text-[10px] font-semibold text-teal-600 opacity-90 group-hover:opacity-100 flex items-center gap-1">
+              <span>View Suppliers</span>
+              <i data-lucide="arrow-right" class="w-3 h-3"></i>
+            </span>
+          </div>
+
+          <!-- Card 15: Stainless Steel Wire -->
+          <div 
+            onclick="openQuoteModal('Stainless Steel Wire (SS 304/316)', '₹240 / Kg', 'Jindal Steel Wire Works')" 
+            class="trending-card bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col items-center text-center group cursor-pointer border border-white/40"
+            data-category="industrial"
+          >
+            <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-slate-50 flex items-center justify-center p-2 mb-3 overflow-hidden group-hover:scale-105 transition-transform duration-300 border border-slate-100">
+              <img 
+                src="https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=300&q=80" 
+                alt="Stainless Steel Wire" 
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <h3 class="text-xs sm:text-sm font-bold text-slate-800 group-hover:text-brand-600 transition tracking-tight line-clamp-2 min-h-[36px] flex items-center justify-center">
+              Stainless Steel Wire
+            </h3>
+            <span class="mt-2 text-[10px] font-semibold text-teal-600 opacity-90 group-hover:opacity-100 flex items-center gap-1">
+              <span>View Suppliers</span>
+              <i data-lucide="arrow-right" class="w-3 h-3"></i>
+            </span>
+          </div>
+
+          <!-- Card 16: Custom Flag -->
+          <div 
+            onclick="showListingView('Custom Flag')" 
+            class="trending-card bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col items-center text-center group cursor-pointer border border-white/40"
+            data-category="commercial"
+          >
+            <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-slate-50 flex items-center justify-center p-2 mb-3 overflow-hidden group-hover:scale-105 transition-transform duration-300 border border-slate-100">
+              <img 
+                src="https://images.unsplash.com/photo-1532375810709-75b1da00537c?auto=format&fit=crop&w=300&q=80" 
+                alt="Custom Flag" 
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <h3 class="text-xs sm:text-sm font-bold text-slate-800 group-hover:text-brand-600 transition tracking-tight line-clamp-2 min-h-[36px] flex items-center justify-center">
+              Custom Flag
+            </h3>
+            <span class="mt-2 text-[10px] font-semibold text-teal-600 opacity-90 group-hover:opacity-100 flex items-center gap-1">
+              <span>View Suppliers</span>
+              <i data-lucide="arrow-right" class="w-3 h-3"></i>
+            </span>
+          </div>
+
+          <!-- Card 17: Wicker Chair -->
+          <div 
+            onclick="showListingView('Wicker Chair')" 
+            class="trending-card bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col items-center text-center group cursor-pointer border border-white/40"
+            data-category="commercial"
+          >
+            <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-slate-50 flex items-center justify-center p-2 mb-3 overflow-hidden group-hover:scale-105 transition-transform duration-300 border border-slate-100">
+              <img 
+                src="https://images.unsplash.com/photo-1580481077195-c328ad4f4477?auto=format&fit=crop&w=300&q=80" 
+                alt="Wicker Chair" 
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <h3 class="text-xs sm:text-sm font-bold text-slate-800 group-hover:text-brand-600 transition tracking-tight line-clamp-2 min-h-[36px] flex items-center justify-center">
+              Wicker Chair
+            </h3>
+            <span class="mt-2 text-[10px] font-semibold text-teal-600 opacity-90 group-hover:opacity-100 flex items-center gap-1">
+              <span>View Suppliers</span>
+              <i data-lucide="arrow-right" class="w-3 h-3"></i>
+            </span>
+          </div>
+
+          <!-- Card 18: Coconut Tree Climber -->
+          <div 
+            onclick="showListingView('Coconut Tree Climber')" 
+            class="trending-card bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col items-center text-center group cursor-pointer border border-white/40"
+            data-category="industrial"
+          >
+            <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-slate-50 flex items-center justify-center p-2 mb-3 overflow-hidden group-hover:scale-105 transition-transform duration-300 border border-slate-100">
+              <img 
+                src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=300&q=80" 
+                alt="Coconut Tree Climber" 
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <h3 class="text-xs sm:text-sm font-bold text-slate-800 group-hover:text-brand-600 transition tracking-tight line-clamp-2 min-h-[36px] flex items-center justify-center">
+              Coconut Tree Climber
+            </h3>
+            <span class="mt-2 text-[10px] font-semibold text-teal-600 opacity-90 group-hover:opacity-100 flex items-center gap-1">
+              <span>View Suppliers</span>
+              <i data-lucide="arrow-right" class="w-3 h-3"></i>
+            </span>
+          </div>
+
+        </div>
+
+        <!-- Bottom Micro Trust Bar in Trending Container -->
+        <div class="relative z-10 mt-8 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-300 gap-4">
+          <div class="flex items-center gap-2">
+            <i data-lucide="sparkles" class="w-4 h-4 text-amber-400"></i>
+            <span>Over <strong>1,40,000+ quotes</strong> requested for these items in the last 24 hours.</span>
+          </div>
+          <button type="button" class="trigger-rfq-modal font-bold text-amber-300 hover:text-white flex items-center gap-1 transition">
+            <span>Can't find your item? Post a Custom RFQ</span>
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- SECTOR 1: BUILDING & CONSTRUCTION MATERIAL -->
+  <!-- ========================================== -->
+  <section id="sec-construction" class="py-12 border-t border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Sector Header -->
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
+        <div>
+          <div class="flex items-center gap-2 text-xs font-bold text-amber-600 uppercase tracking-wider mb-1">
+            <i data-lucide="hard-hat" class="w-4 h-4"></i>
+            Heavy Infrastructure &amp; Projects
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">Building &amp; Construction</h2>
+          <p class="text-xs sm:text-sm text-slate-500 mt-1">Concrete mixers, TMT steel bars, brick making plants &amp; scaffolding equipment.</p>
+        </div>
+        <button type="button" class="trigger-rfq-modal self-start sm:self-auto text-xs font-bold text-brand-600 hover:text-brand-700 flex items-center gap-1 group">
+          <span>Post Requirement for Construction</span>
+          <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition"></i>
+        </button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Item 1 -->
+        <div class="bg-white rounded-3xl p-5 shadow-ios hover:shadow-ios-lg transition-all duration-300 border border-slate-200/70 flex flex-col justify-between group">
+          <div>
+            <div class="relative h-48 rounded-2xl bg-slate-100 overflow-hidden mb-4">
+              <img 
+                src="https://images.unsplash.com/photo-1541888946425-d0fbb1861593?auto=format&fit=crop&w=600&q=80" 
+                alt="Automatic Concrete Mixer Machine" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+              />
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[10px] font-bold text-teal-700 flex items-center gap-1 shadow-sm">
+                <i data-lucide="shield-check" class="w-3 h-3 text-teal-600"></i> TrustSEAL
+              </span>
+              <span class="absolute bottom-3 right-3 px-2 py-0.5 rounded-lg bg-black/60 backdrop-blur-md text-white text-[10px] font-semibold">
+                Ludhiana, Punjab
+              </span>
+            </div>
+
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-1">
+              <span>Bharat Heavy Infra</span>
+              <span class="flex items-center gap-0.5 text-amber-500 font-bold">
+                <i data-lucide="star" class="w-3 h-3 fill-amber-400"></i> 4.9
+              </span>
+            </div>
+
+            <h3 class="text-base font-bold text-slate-900 group-hover:text-brand-600 transition leading-snug">
+              Hydraulic Self-Loading Concrete Mixer (10/7 CFT)
+            </h3>
+
+            <div class="mt-2.5 flex items-baseline gap-2">
+              <span class="text-lg font-extrabold text-slate-900">₹1,45,000</span>
+              <span class="text-xs text-slate-400 font-medium">/ Unit</span>
+            </div>
+
+            <div class="text-[11px] text-slate-500 mt-1">
+              MOQ: 1 Unit &bull; Capacity: 280 Litres Drum
+            </div>
+          </div>
+
+          <div class="mt-5 pt-4 border-t border-slate-100 flex items-center gap-2">
+            <button 
+              type="button" 
+              onclick="openQuoteModal('Hydraulic Self-Loading Concrete Mixer', '₹1,45,000 / Unit', 'Bharat Heavy Infra (Ludhiana)')" 
+              class="flex-1 py-2.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white text-xs font-bold shadow-sm transition active:scale-95 flex items-center justify-center gap-1.5"
+            >
+              <i data-lucide="tag" class="w-3.5 h-3.5"></i>
+              <span>Get Best Price</span>
+            </button>
+            <button type="button" onclick="showToast('Calling supplier: +91 98140 XXXXX')" class="p-2.5 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-600 transition" title="Contact Manufacturer">
+              <i data-lucide="phone-call" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="bg-white rounded-3xl p-5 shadow-ios hover:shadow-ios-lg transition-all duration-300 border border-slate-200/70 flex flex-col justify-between group">
+          <div>
+            <div class="relative h-48 rounded-2xl bg-slate-100 overflow-hidden mb-4">
+              <img 
+                src="https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=600&q=80" 
+                alt="Primary TMT Steel Rebars" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+              />
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[10px] font-bold text-teal-700 flex items-center gap-1 shadow-sm">
+                <i data-lucide="shield-check" class="w-3 h-3 text-teal-600"></i> Verified Exporter
+              </span>
+              <span class="absolute bottom-3 right-3 px-2 py-0.5 rounded-lg bg-black/60 backdrop-blur-md text-white text-[10px] font-semibold">
+                Raipur, CG
+              </span>
+            </div>
+
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-1">
+              <span>Shree Mahavir Ispat</span>
+              <span class="flex items-center gap-0.5 text-amber-500 font-bold">
+                <i data-lucide="star" class="w-3 h-3 fill-amber-400"></i> 4.8
+              </span>
+            </div>
+
+            <h3 class="text-base font-bold text-slate-900 group-hover:text-brand-600 transition leading-snug">
+              Fe 550D High Ductility TMT Steel Rebars (8mm - 32mm)
+            </h3>
+
+            <div class="mt-2.5 flex items-baseline gap-2">
+              <span class="text-lg font-extrabold text-slate-900">₹54,000</span>
+              <span class="text-xs text-slate-400 font-medium">/ Metric Ton</span>
+            </div>
+
+            <div class="text-[11px] text-slate-500 mt-1">
+              MOQ: 10 Metric Ton &bull; BIS Certified (IS 1786)
+            </div>
+          </div>
+
+          <div class="mt-5 pt-4 border-t border-slate-100 flex items-center gap-2">
+            <button 
+              type="button" 
+              onclick="openQuoteModal('Fe 550D TMT Steel Rebars', '₹54,000 / MT', 'Shree Mahavir Ispat (Raipur)')" 
+              class="flex-1 py-2.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white text-xs font-bold shadow-sm transition active:scale-95 flex items-center justify-center gap-1.5"
+            >
+              <i data-lucide="tag" class="w-3.5 h-3.5"></i>
+              <span>Get Best Price</span>
+            </button>
+            <button type="button" onclick="showToast('Calling supplier: +91 94252 XXXXX')" class="p-2.5 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-600 transition">
+              <i data-lucide="phone-call" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="bg-white rounded-3xl p-5 shadow-ios hover:shadow-ios-lg transition-all duration-300 border border-slate-200/70 flex flex-col justify-between group">
+          <div>
+            <div class="relative h-48 rounded-2xl bg-slate-100 overflow-hidden mb-4">
+              <img 
+                src="https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?auto=format&fit=crop&w=600&q=80" 
+                alt="Automatic Fly Ash Brick Machine" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+              />
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[10px] font-bold text-teal-700 flex items-center gap-1 shadow-sm">
+                <i data-lucide="shield-check" class="w-3 h-3 text-teal-600"></i> TrustSEAL
+              </span>
+              <span class="absolute bottom-3 right-3 px-2 py-0.5 rounded-lg bg-black/60 backdrop-blur-md text-white text-[10px] font-semibold">
+                Ahmedabad, Gujarat
+              </span>
+            </div>
+
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-1">
+              <span>Apex Engineering Works</span>
+              <span class="flex items-center gap-0.5 text-amber-500 font-bold">
+                <i data-lucide="star" class="w-3 h-3 fill-amber-400"></i> 5.0
+              </span>
+            </div>
+
+            <h3 class="text-base font-bold text-slate-900 group-hover:text-brand-600 transition leading-snug">
+              Automatic Hydraulic Fly Ash Brick Making Plant
+            </h3>
+
+            <div class="mt-2.5 flex items-baseline gap-2">
+              <span class="text-lg font-extrabold text-slate-900">₹8,50,000</span>
+              <span class="text-xs text-slate-400 font-medium">/ Set</span>
+            </div>
+
+            <div class="text-[11px] text-slate-500 mt-1">
+              MOQ: 1 Set &bull; 8 Bricks per stroke &bull; Pan Mixer Included
+            </div>
+          </div>
+
+          <div class="mt-5 pt-4 border-t border-slate-100 flex items-center gap-2">
+            <button 
+              type="button" 
+              onclick="openQuoteModal('Automatic Fly Ash Brick Making Plant', '₹8,50,000 / Set', 'Apex Engineering (Ahmedabad)')" 
+              class="flex-1 py-2.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white text-xs font-bold shadow-sm transition active:scale-95 flex items-center justify-center gap-1.5"
+            >
+              <i data-lucide="tag" class="w-3.5 h-3.5"></i>
+              <span>Get Best Price</span>
+            </button>
+            <button type="button" onclick="showToast('Calling supplier: +91 98250 XXXXX')" class="p-2.5 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-600 transition">
+              <i data-lucide="phone-call" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- SECTOR 2: INDUSTRIAL MACHINERY & TOOLS     -->
+  <!-- ========================================== -->
+  <section id="sec-machinery" class="py-12 bg-slate-100/60 border-t border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Sector Header -->
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
+        <div>
+          <div class="flex items-center gap-2 text-xs font-bold text-blue-600 uppercase tracking-wider mb-1">
+            <i data-lucide="cog" class="w-4 h-4"></i>
+            Manufacturing &amp; Engineering
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">Industrial Machinery &amp; Equipment</h2>
+          <p class="text-xs sm:text-sm text-slate-500 mt-1">CNC machines, lathes, commercial generators, material handling &amp; mills.</p>
+        </div>
+        <button type="button" class="trigger-rfq-modal self-start sm:self-auto text-xs font-bold text-brand-600 hover:text-brand-700 flex items-center gap-1 group">
+          <span>Post Requirement for Machinery</span>
+          <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition"></i>
+        </button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Machinery 1 -->
+        <div class="bg-white rounded-3xl p-5 shadow-ios hover:shadow-ios-lg transition-all duration-300 border border-slate-200/70 flex flex-col justify-between group">
+          <div>
+            <div class="relative h-48 rounded-2xl bg-slate-100 overflow-hidden mb-4">
+              <img 
+                src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" 
+                alt="CNC Lathe Machine" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+              />
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[10px] font-bold text-teal-700 flex items-center gap-1 shadow-sm">
+                <i data-lucide="shield-check" class="w-3 h-3 text-teal-600"></i> TrustSEAL
+              </span>
+              <span class="absolute bottom-3 right-3 px-2 py-0.5 rounded-lg bg-black/60 backdrop-blur-md text-white text-[10px] font-semibold">
+                Rajkot, Gujarat
+              </span>
+            </div>
+
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-1">
+              <span>Precision CNC Tech</span>
+              <span class="flex items-center gap-0.5 text-amber-500 font-bold">
+                <i data-lucide="star" class="w-3 h-3 fill-amber-400"></i> 4.9
+              </span>
+            </div>
+
+            <h3 class="text-base font-bold text-slate-900 group-hover:text-brand-600 transition leading-snug">
+              Slant Bed CNC Turning Lathe Machine (Siemens / Fanuc)
+            </h3>
+
+            <div class="mt-2.5 flex items-baseline gap-2">
+              <span class="text-lg font-extrabold text-slate-900">₹12,80,000</span>
+              <span class="text-xs text-slate-400 font-medium">/ Set</span>
+            </div>
+
+            <div class="text-[11px] text-slate-500 mt-1">
+              Max Turning Length: 500 mm &bull; Spindle Speed: 4000 RPM
+            </div>
+          </div>
+
+          <div class="mt-5 pt-4 border-t border-slate-100 flex items-center gap-2">
+            <button 
+              type="button" 
+              onclick="openQuoteModal('Slant Bed CNC Turning Lathe', '₹12,80,000 / Set', 'Precision CNC Tech (Rajkot)')" 
+              class="flex-1 py-2.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white text-xs font-bold shadow-sm transition active:scale-95 flex items-center justify-center gap-1.5"
+            >
+              <i data-lucide="tag" class="w-3.5 h-3.5"></i>
+              <span>Get Best Price</span>
+            </button>
+            <button type="button" onclick="showToast('Calling supplier: +91 97240 XXXXX')" class="p-2.5 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-600 transition">
+              <i data-lucide="phone-call" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Machinery 2 -->
+        <div class="bg-white rounded-3xl p-5 shadow-ios hover:shadow-ios-lg transition-all duration-300 border border-slate-200/70 flex flex-col justify-between group">
+          <div>
+            <div class="relative h-48 rounded-2xl bg-slate-100 overflow-hidden mb-4">
+              <img 
+                src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80" 
+                alt="Industrial Silent Diesel Generator" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+              />
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[10px] font-bold text-teal-700 flex items-center gap-1 shadow-sm">
+                <i data-lucide="shield-check" class="w-3 h-3 text-teal-600"></i> Verified Exporter
+              </span>
+              <span class="absolute bottom-3 right-3 px-2 py-0.5 rounded-lg bg-black/60 backdrop-blur-md text-white text-[10px] font-semibold">
+                Bengaluru, KA
+              </span>
+            </div>
+
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-1">
+              <span>Kirloskar Power Systems</span>
+              <span class="flex items-center gap-0.5 text-amber-500 font-bold">
+                <i data-lucide="star" class="w-3 h-3 fill-amber-400"></i> 4.8
+              </span>
+            </div>
+
+            <h3 class="text-base font-bold text-slate-900 group-hover:text-brand-600 transition leading-snug">
+              125 kVA Silent Acoustic CPCB IV+ Compliant Diesel Genset
+            </h3>
+
+            <div class="mt-2.5 flex items-baseline gap-2">
+              <span class="text-lg font-extrabold text-slate-900">₹6,80,000</span>
+              <span class="text-xs text-slate-400 font-medium">/ Unit</span>
+            </div>
+
+            <div class="text-[11px] text-slate-500 mt-1">
+              Fuel: Diesel &bull; Phase: 3 Phase &bull; Warranty: 2 Years Onsite
+            </div>
+          </div>
+
+          <div class="mt-5 pt-4 border-t border-slate-100 flex items-center gap-2">
+            <button 
+              type="button" 
+              onclick="openQuoteModal('125 kVA Silent Diesel Genset', '₹6,80,000 / Unit', 'Kirloskar Power Systems (Bengaluru)')" 
+              class="flex-1 py-2.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white text-xs font-bold shadow-sm transition active:scale-95 flex items-center justify-center gap-1.5"
+            >
+              <i data-lucide="tag" class="w-3.5 h-3.5"></i>
+              <span>Get Best Price</span>
+            </button>
+            <button type="button" onclick="showToast('Calling supplier: +91 99800 XXXXX')" class="p-2.5 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-600 transition">
+              <i data-lucide="phone-call" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Machinery 3 -->
+        <div class="bg-white rounded-3xl p-5 shadow-ios hover:shadow-ios-lg transition-all duration-300 border border-slate-200/70 flex flex-col justify-between group">
+          <div>
+            <div class="relative h-48 rounded-2xl bg-slate-100 overflow-hidden mb-4">
+              <img 
+                src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80" 
+                alt="Electric Counterbalance Forklift" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+              />
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[10px] font-bold text-teal-700 flex items-center gap-1 shadow-sm">
+                <i data-lucide="shield-check" class="w-3 h-3 text-teal-600"></i> TrustSEAL
+              </span>
+              <span class="absolute bottom-3 right-3 px-2 py-0.5 rounded-lg bg-black/60 backdrop-blur-md text-white text-[10px] font-semibold">
+                Pune, Maharashtra
+              </span>
+            </div>
+
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-1">
+              <span>Voltas Material Handling</span>
+              <span class="flex items-center gap-0.5 text-amber-500 font-bold">
+                <i data-lucide="star" class="w-3 h-3 fill-amber-400"></i> 4.9
+              </span>
+            </div>
+
+            <h3 class="text-base font-bold text-slate-900 group-hover:text-brand-600 transition leading-snug">
+              3-Ton Lithium-Ion Electric Counterbalance Forklift
+            </h3>
+
+            <div class="mt-2.5 flex items-baseline gap-2">
+              <span class="text-lg font-extrabold text-slate-900">₹9,20,000</span>
+              <span class="text-xs text-slate-400 font-medium">/ Unit</span>
+            </div>
+
+            <div class="text-[11px] text-slate-500 mt-1">
+              Lift Height: 4.5 Metres &bull; Fast Charging 2 Hours
+            </div>
+          </div>
+
+          <div class="mt-5 pt-4 border-t border-slate-100 flex items-center gap-2">
+            <button 
+              type="button" 
+              onclick="openQuoteModal('3-Ton Electric Forklift', '₹9,20,000 / Unit', 'Voltas Handling (Pune)')" 
+              class="flex-1 py-2.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white text-xs font-bold shadow-sm transition active:scale-95 flex items-center justify-center gap-1.5"
+            >
+              <i data-lucide="tag" class="w-3.5 h-3.5"></i>
+              <span>Get Best Price</span>
+            </button>
+            <button type="button" onclick="showToast('Calling supplier: +91 98900 XXXXX')" class="p-2.5 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-600 transition">
+              <i data-lucide="phone-call" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- SECTOR 3: PACKAGING MACHINERY & MATERIALS  -->
+  <!-- ========================================== -->
+  <section id="sec-packaging" class="py-12 border-t border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Sector Header -->
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
+        <div>
+          <div class="flex items-center gap-2 text-xs font-bold text-indigo-600 uppercase tracking-wider mb-1">
+            <i data-lucide="package" class="w-4 h-4"></i>
+            Commercial Packaging &amp; Automation
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">Packaging Machines &amp; Materials</h2>
+          <p class="text-xs sm:text-sm text-slate-500 mt-1">Pouch packing, corrugated box plants, bottle filling machines &amp; bulk supplies.</p>
+        </div>
+        <button type="button" class="trigger-rfq-modal self-start sm:self-auto text-xs font-bold text-brand-600 hover:text-brand-700 flex items-center gap-1 group">
+          <span>Post Requirement for Packaging</span>
+          <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition"></i>
+        </button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Packaging 1 -->
+        <div class="bg-white rounded-3xl p-5 shadow-ios hover:shadow-ios-lg transition-all duration-300 border border-slate-200/70 flex flex-col justify-between group">
+          <div>
+            <div class="relative h-48 rounded-2xl bg-slate-100 overflow-hidden mb-4">
+              <img 
+                src="https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&w=600&q=80" 
+                alt="Automatic Form Fill Seal Pouch Packing Machine" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+              />
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[10px] font-bold text-teal-700 flex items-center gap-1 shadow-sm">
+                <i data-lucide="shield-check" class="w-3 h-3 text-teal-600"></i> TrustSEAL
+              </span>
+              <span class="absolute bottom-3 right-3 px-2 py-0.5 rounded-lg bg-black/60 backdrop-blur-md text-white text-[10px] font-semibold">
+                Ahmedabad, Gujarat
+              </span>
+            </div>
+
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-1">
+              <span>Swastik Packaging Automations</span>
+              <span class="flex items-center gap-0.5 text-amber-500 font-bold">
+                <i data-lucide="star" class="w-3 h-3 fill-amber-400"></i> 4.9
+              </span>
+            </div>
+
+            <h3 class="text-base font-bold text-slate-900 group-hover:text-brand-600 transition leading-snug">
+              Automatic Pouch Packing Machine (Spices, Namkeen &amp; Grains)
+            </h3>
+
+            <div class="mt-2.5 flex items-baseline gap-2">
+              <span class="text-lg font-extrabold text-slate-900">₹2,75,000</span>
+              <span class="text-xs text-slate-400 font-medium">/ Set</span>
+            </div>
+
+            <div class="text-[11px] text-slate-500 mt-1">
+              Speed: 40-70 pouches/min &bull; Multihead Weigher compatible
+            </div>
+          </div>
+
+          <div class="mt-5 pt-4 border-t border-slate-100 flex items-center gap-2">
+            <button 
+              type="button" 
+              onclick="openQuoteModal('Automatic Pouch Packing Machine', '₹2,75,000 / Set', 'Swastik Packaging (Ahmedabad)')" 
+              class="flex-1 py-2.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white text-xs font-bold shadow-sm transition active:scale-95 flex items-center justify-center gap-1.5"
+            >
+              <i data-lucide="tag" class="w-3.5 h-3.5"></i>
+              <span>Get Best Price</span>
+            </button>
+            <button type="button" onclick="showToast('Calling supplier: +91 97120 XXXXX')" class="p-2.5 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-600 transition">
+              <i data-lucide="phone-call" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Packaging 2 -->
+        <div class="bg-white rounded-3xl p-5 shadow-ios hover:shadow-ios-lg transition-all duration-300 border border-slate-200/70 flex flex-col justify-between group">
+          <div>
+            <div class="relative h-48 rounded-2xl bg-slate-100 overflow-hidden mb-4">
+              <img 
+                src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80" 
+                alt="Automatic Corrugated Box Making Machine" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+              />
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[10px] font-bold text-teal-700 flex items-center gap-1 shadow-sm">
+                <i data-lucide="shield-check" class="w-3 h-3 text-teal-600"></i> Verified Exporter
+              </span>
+              <span class="absolute bottom-3 right-3 px-2 py-0.5 rounded-lg bg-black/60 backdrop-blur-md text-white text-[10px] font-semibold">
+                Coimbatore, TN
+              </span>
+            </div>
+
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-1">
+              <span>Apex Carton Machinery</span>
+              <span class="flex items-center gap-0.5 text-amber-500 font-bold">
+                <i data-lucide="star" class="w-3 h-3 fill-amber-400"></i> 4.8
+              </span>
+            </div>
+
+            <h3 class="text-base font-bold text-slate-900 group-hover:text-brand-600 transition leading-snug">
+              Heavy Duty Corrugated Box Making Plant (3/5 Ply Board)
+            </h3>
+
+            <div class="mt-2.5 flex items-baseline gap-2">
+              <span class="text-lg font-extrabold text-slate-900">₹14,00,000</span>
+              <span class="text-xs text-slate-400 font-medium">/ Set</span>
+            </div>
+
+            <div class="text-[11px] text-slate-500 mt-1">
+              Includes Corrugation, Sheet Pasting, Rotary Cutter &amp; Slotter
+            </div>
+          </div>
+
+          <div class="mt-5 pt-4 border-t border-slate-100 flex items-center gap-2">
+            <button 
+              type="button" 
+              onclick="openQuoteModal('Corrugated Box Making Plant', '₹14,00,000 / Set', 'Apex Carton Machinery (Coimbatore)')" 
+              class="flex-1 py-2.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white text-xs font-bold shadow-sm transition active:scale-95 flex items-center justify-center gap-1.5"
+            >
+              <i data-lucide="tag" class="w-3.5 h-3.5"></i>
+              <span>Get Best Price</span>
+            </button>
+            <button type="button" onclick="showToast('Calling supplier: +91 94430 XXXXX')" class="p-2.5 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-600 transition">
+              <i data-lucide="phone-call" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Packaging 3 -->
+        <div class="bg-white rounded-3xl p-5 shadow-ios hover:shadow-ios-lg transition-all duration-300 border border-slate-200/70 flex flex-col justify-between group">
+          <div>
+            <div class="relative h-48 rounded-2xl bg-slate-100 overflow-hidden mb-4">
+              <img 
+                src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=600&q=80" 
+                alt="Automatic Liquid Filling Machine" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+              />
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[10px] font-bold text-teal-700 flex items-center gap-1 shadow-sm">
+                <i data-lucide="shield-check" class="w-3 h-3 text-teal-600"></i> TrustSEAL
+              </span>
+              <span class="absolute bottom-3 right-3 px-2 py-0.5 rounded-lg bg-black/60 backdrop-blur-md text-white text-[10px] font-semibold">
+                Mumbai, Maharashtra
+              </span>
+            </div>
+
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-1">
+              <span>Rotomac Packaging Lines</span>
+              <span class="flex items-center gap-0.5 text-amber-500 font-bold">
+                <i data-lucide="star" class="w-3 h-3 fill-amber-400"></i> 4.9
+              </span>
+            </div>
+
+            <h3 class="text-base font-bold text-slate-900 group-hover:text-brand-600 transition leading-snug">
+              Automatic 4-Head Piston Liquid Filling &amp; Capping Machine
+            </h3>
+
+            <div class="mt-2.5 flex items-baseline gap-2">
+              <span class="text-lg font-extrabold text-slate-900">₹3,60,000</span>
+              <span class="text-xs text-slate-400 font-medium">/ Unit</span>
+            </div>
+
+            <div class="text-[11px] text-slate-500 mt-1">
+              For Oil, Syrups &amp; Sanitizers &bull; Accuracy: &plusmn;0.5%
+            </div>
+          </div>
+
+          <div class="mt-5 pt-4 border-t border-slate-100 flex items-center gap-2">
+            <button 
+              type="button" 
+              onclick="openQuoteModal('Automatic 4-Head Liquid Filling Machine', '₹3,60,000 / Unit', 'Rotomac Lines (Mumbai)')" 
+              class="flex-1 py-2.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white text-xs font-bold shadow-sm transition active:scale-95 flex items-center justify-center gap-1.5"
+            >
+              <i data-lucide="tag" class="w-3.5 h-3.5"></i>
+              <span>Get Best Price</span>
+            </button>
+            <button type="button" onclick="showToast('Calling supplier: +91 98200 XXXXX')" class="p-2.5 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-600 transition">
+              <i data-lucide="phone-call" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- SECTOR 4: ELECTRICAL, SOLAR & POWER        -->
+  <!-- ========================================== -->
+  <section id="sec-electrical" class="py-12 bg-slate-100/60 border-t border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Sector Header -->
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
+        <div>
+          <div class="flex items-center gap-2 text-xs font-bold text-yellow-600 uppercase tracking-wider mb-1">
+            <i data-lucide="zap" class="w-4 h-4"></i>
+            Energy, Utilities &amp; Electronics
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">Electrical, Solar &amp; Power Equipment</h2>
+          <p class="text-xs sm:text-sm text-slate-500 mt-1">Step-up transformers, mono PERC solar panels, MCC electrical panels &amp; cables.</p>
+        </div>
+        <button type="button" class="trigger-rfq-modal self-start sm:self-auto text-xs font-bold text-brand-600 hover:text-brand-700 flex items-center gap-1 group">
+          <span>Post Requirement for Electrical</span>
+          <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition"></i>
+        </button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Electrical 1 -->
+        <div class="bg-white rounded-3xl p-5 shadow-ios hover:shadow-ios-lg transition-all duration-300 border border-slate-200/70 flex flex-col justify-between group">
+          <div>
+            <div class="relative h-48 rounded-2xl bg-slate-100 overflow-hidden mb-4">
+              <img 
+                src="https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=600&q=80" 
+                alt="Industrial Solar Panels" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+              />
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[10px] font-bold text-teal-700 flex items-center gap-1 shadow-sm">
+                <i data-lucide="shield-check" class="w-3 h-3 text-teal-600"></i> TrustSEAL
+              </span>
+              <span class="absolute bottom-3 right-3 px-2 py-0.5 rounded-lg bg-black/60 backdrop-blur-md text-white text-[10px] font-semibold">
+                Jaipur, Rajasthan
+              </span>
+            </div>
+
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-1">
+              <span>Suryodaya Solar Tech</span>
+              <span class="flex items-center gap-0.5 text-amber-500 font-bold">
+                <i data-lucide="star" class="w-3 h-3 fill-amber-400"></i> 4.9
+              </span>
+            </div>
+
+            <h3 class="text-base font-bold text-slate-900 group-hover:text-brand-600 transition leading-snug">
+              545W Mono PERC Bifacial Solar PV Modules (DCR / ALMM)
+            </h3>
+
+            <div class="mt-2.5 flex items-baseline gap-2">
+              <span class="text-lg font-extrabold text-slate-900">₹19.50</span>
+              <span class="text-xs text-slate-400 font-medium">/ Watt</span>
+            </div>
+
+            <div class="text-[11px] text-slate-500 mt-1">
+              MOQ: 10 kW &bull; 25 Years Performance Warranty &bull; BIS Approved
+            </div>
+          </div>
+
+          <div class="mt-5 pt-4 border-t border-slate-100 flex items-center gap-2">
+            <button 
+              type="button" 
+              onclick="openQuoteModal('545W Mono PERC Solar PV Modules', '₹19.50 / Watt', 'Suryodaya Solar (Jaipur)')" 
+              class="flex-1 py-2.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white text-xs font-bold shadow-sm transition active:scale-95 flex items-center justify-center gap-1.5"
+            >
+              <i data-lucide="tag" class="w-3.5 h-3.5"></i>
+              <span>Get Best Price</span>
+            </button>
+            <button type="button" onclick="showToast('Calling supplier: +91 94140 XXXXX')" class="p-2.5 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-600 transition">
+              <i data-lucide="phone-call" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Electrical 2 -->
+        <div class="bg-white rounded-3xl p-5 shadow-ios hover:shadow-ios-lg transition-all duration-300 border border-slate-200/70 flex flex-col justify-between group">
+          <div>
+            <div class="relative h-48 rounded-2xl bg-slate-100 overflow-hidden mb-4">
+              <img 
+                src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=600&q=80" 
+                alt="Oil Cooled Power Transformer" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+              />
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[10px] font-bold text-teal-700 flex items-center gap-1 shadow-sm">
+                <i data-lucide="shield-check" class="w-3 h-3 text-teal-600"></i> Verified Exporter
+              </span>
+              <span class="absolute bottom-3 right-3 px-2 py-0.5 rounded-lg bg-black/60 backdrop-blur-md text-white text-[10px] font-semibold">
+                Vadodara, Gujarat
+              </span>
+            </div>
+
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-1">
+              <span>Gujarat Transformers Ltd.</span>
+              <span class="flex items-center gap-0.5 text-amber-500 font-bold">
+                <i data-lucide="star" class="w-3 h-3 fill-amber-400"></i> 4.9
+              </span>
+            </div>
+
+            <h3 class="text-base font-bold text-slate-900 group-hover:text-brand-600 transition leading-snug">
+              500 kVA 11kV/433V Oil Cooled Distribution Transformer
+            </h3>
+
+            <div class="mt-2.5 flex items-baseline gap-2">
+              <span class="text-lg font-extrabold text-slate-900">₹5,40,000</span>
+              <span class="text-xs text-slate-400 font-medium">/ Unit</span>
+            </div>
+
+            <div class="text-[11px] text-slate-500 mt-1">
+              BEE Star Rated &bull; Copper Wound &bull; IS 1180 Part 1 Level 2
+            </div>
+          </div>
+
+          <div class="mt-5 pt-4 border-t border-slate-100 flex items-center gap-2">
+            <button 
+              type="button" 
+              onclick="openQuoteModal('500 kVA Oil Cooled Transformer', '₹5,40,000 / Unit', 'Gujarat Transformers (Vadodara)')" 
+              class="flex-1 py-2.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white text-xs font-bold shadow-sm transition active:scale-95 flex items-center justify-center gap-1.5"
+            >
+              <i data-lucide="tag" class="w-3.5 h-3.5"></i>
+              <span>Get Best Price</span>
+            </button>
+            <button type="button" onclick="showToast('Calling supplier: +91 98240 XXXXX')" class="p-2.5 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-600 transition">
+              <i data-lucide="phone-call" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Electrical 3 -->
+        <div class="bg-white rounded-3xl p-5 shadow-ios hover:shadow-ios-lg transition-all duration-300 border border-slate-200/70 flex flex-col justify-between group">
+          <div>
+            <div class="relative h-48 rounded-2xl bg-slate-100 overflow-hidden mb-4">
+              <img 
+                src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80" 
+                alt="HT / LT Motor Control Center Electrical Panels" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+              />
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[10px] font-bold text-teal-700 flex items-center gap-1 shadow-sm">
+                <i data-lucide="shield-check" class="w-3 h-3 text-teal-600"></i> TrustSEAL
+              </span>
+              <span class="absolute bottom-3 right-3 px-2 py-0.5 rounded-lg bg-black/60 backdrop-blur-md text-white text-[10px] font-semibold">
+                Chennai, TN
+              </span>
+            </div>
+
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-1">
+              <span>Technocraft Switchgear</span>
+              <span class="flex items-center gap-0.5 text-amber-500 font-bold">
+                <i data-lucide="star" class="w-3 h-3 fill-amber-400"></i> 4.8
+              </span>
+            </div>
+
+            <h3 class="text-base font-bold text-slate-900 group-hover:text-brand-600 transition leading-snug">
+              Modular Motor Control Centre (MCC) Electrical Panels
+            </h3>
+
+            <div class="mt-2.5 flex items-baseline gap-2">
+              <span class="text-lg font-extrabold text-slate-900">₹2,10,000</span>
+              <span class="text-xs text-slate-400 font-medium">/ Unit</span>
+            </div>
+
+            <div class="text-[11px] text-slate-500 mt-1">
+              IP54 Protection &bull; Schneider / L&amp;T Components &bull; Custom Drawing
+            </div>
+          </div>
+
+          <div class="mt-5 pt-4 border-t border-slate-100 flex items-center gap-2">
+            <button 
+              type="button" 
+              onclick="openQuoteModal('MCC Electrical Panels', '₹2,10,000 / Unit', 'Technocraft Switchgear (Chennai)')" 
+              class="flex-1 py-2.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white text-xs font-bold shadow-sm transition active:scale-95 flex items-center justify-center gap-1.5"
+            >
+              <i data-lucide="tag" class="w-3.5 h-3.5"></i>
+              <span>Get Best Price</span>
+            </button>
+            <button type="button" onclick="showToast('Calling supplier: +91 98400 XXXXX')" class="p-2.5 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-600 transition">
+              <i data-lucide="phone-call" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- SECTOR 5: MEDICAL, PHARMA & HEALTHCARE     -->
+  <!-- ========================================== -->
+  <section id="sec-pharma" class="py-12 border-t border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Sector Header -->
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
+        <div>
+          <div class="flex items-center gap-2 text-xs font-bold text-rose-600 uppercase tracking-wider mb-1">
+            <i data-lucide="activity" class="w-4 h-4"></i>
+            Healthcare &amp; Life Sciences
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">Pharmaceutical &amp; Medical Supplies</h2>
+          <p class="text-xs sm:text-sm text-slate-500 mt-1">ICU beds, patient monitors, bulk contract manufacturing tablets &amp; herbal extracts.</p>
+        </div>
+        <button type="button" class="trigger-rfq-modal self-start sm:self-auto text-xs font-bold text-brand-600 hover:text-brand-700 flex items-center gap-1 group">
+          <span>Post Requirement for Pharma</span>
+          <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition"></i>
+        </button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Pharma 1 -->
+        <div class="bg-white rounded-3xl p-5 shadow-ios hover:shadow-ios-lg transition-all duration-300 border border-slate-200/70 flex flex-col justify-between group">
+          <div>
+            <div class="relative h-48 rounded-2xl bg-slate-100 overflow-hidden mb-4">
+              <img 
+                src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=600&q=80" 
+                alt="Motorized 5-Function ICU Hospital Bed" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+              />
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[10px] font-bold text-teal-700 flex items-center gap-1 shadow-sm">
+                <i data-lucide="shield-check" class="w-3 h-3 text-teal-600"></i> TrustSEAL
+              </span>
+              <span class="absolute bottom-3 right-3 px-2 py-0.5 rounded-lg bg-black/60 backdrop-blur-md text-white text-[10px] font-semibold">
+                Ahmedabad, Gujarat
+              </span>
+            </div>
+
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-1">
+              <span>Meditech Healthcare Solutions</span>
+              <span class="flex items-center gap-0.5 text-amber-500 font-bold">
+                <i data-lucide="star" class="w-3 h-3 fill-amber-400"></i> 4.9
+              </span>
+            </div>
+
+            <h3 class="text-base font-bold text-slate-900 group-hover:text-brand-600 transition leading-snug">
+              Motorized 5-Function Electric ICU Hospital Bed
+            </h3>
+
+            <div class="mt-2.5 flex items-baseline gap-2">
+              <span class="text-lg font-extrabold text-slate-900">₹48,000</span>
+              <span class="text-xs text-slate-400 font-medium">/ Bed</span>
+            </div>
+
+            <div class="text-[11px] text-slate-500 mt-1">
+              CPR Quick Release &bull; ABS Tuckaway Rails &bull; CE &amp; ISO 13485
+            </div>
+          </div>
+
+          <div class="mt-5 pt-4 border-t border-slate-100 flex items-center gap-2">
+            <button 
+              type="button" 
+              onclick="openQuoteModal('Motorized 5-Function ICU Bed', '₹48,000 / Bed', 'Meditech Healthcare (Ahmedabad)')" 
+              class="flex-1 py-2.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white text-xs font-bold shadow-sm transition active:scale-95 flex items-center justify-center gap-1.5"
+            >
+              <i data-lucide="tag" class="w-3.5 h-3.5"></i>
+              <span>Get Best Price</span>
+            </button>
+            <button type="button" onclick="showToast('Calling supplier: +91 98790 XXXXX')" class="p-2.5 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-600 transition">
+              <i data-lucide="phone-call" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Pharma 2 -->
+        <div class="bg-white rounded-3xl p-5 shadow-ios hover:shadow-ios-lg transition-all duration-300 border border-slate-200/70 flex flex-col justify-between group">
+          <div>
+            <div class="relative h-48 rounded-2xl bg-slate-100 overflow-hidden mb-4">
+              <img 
+                src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=600&q=80" 
+                alt="Third Party Pharma Contract Manufacturing" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+              />
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[10px] font-bold text-teal-700 flex items-center gap-1 shadow-sm">
+                <i data-lucide="shield-check" class="w-3 h-3 text-teal-600"></i> WHO-GMP
+              </span>
+              <span class="absolute bottom-3 right-3 px-2 py-0.5 rounded-lg bg-black/60 backdrop-blur-md text-white text-[10px] font-semibold">
+                Baddi, HP
+              </span>
+            </div>
+
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-1">
+              <span>Himalayan Lifesciences</span>
+              <span class="flex items-center gap-0.5 text-amber-500 font-bold">
+                <i data-lucide="star" class="w-3 h-3 fill-amber-400"></i> 4.8
+              </span>
+            </div>
+
+            <h3 class="text-base font-bold text-slate-900 group-hover:text-brand-600 transition leading-snug">
+              Third Party Pharma Contract Manufacturing (Tablets / Capsules)
+            </h3>
+
+            <div class="mt-2.5 flex items-baseline gap-2">
+              <span class="text-lg font-extrabold text-slate-900">₹0.65</span>
+              <span class="text-xs text-slate-400 font-medium">/ Capsule</span>
+            </div>
+
+            <div class="text-[11px] text-slate-500 mt-1">
+              MOQ: 1,00,000 Units &bull; Alu-Alu / Blister Packaging &bull; DCGI Approved
+            </div>
+          </div>
+
+          <div class="mt-5 pt-4 border-t border-slate-100 flex items-center gap-2">
+            <button 
+              type="button" 
+              onclick="openQuoteModal('Pharma Contract Manufacturing', '₹0.65 / Capsule', 'Himalayan Lifesciences (Baddi)')" 
+              class="flex-1 py-2.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white text-xs font-bold shadow-sm transition active:scale-95 flex items-center justify-center gap-1.5"
+            >
+              <i data-lucide="tag" class="w-3.5 h-3.5"></i>
+              <span>Get Best Price</span>
+            </button>
+            <button type="button" onclick="showToast('Calling supplier: +91 98160 XXXXX')" class="p-2.5 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-600 transition">
+              <i data-lucide="phone-call" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Pharma 3 -->
+        <div class="bg-white rounded-3xl p-5 shadow-ios hover:shadow-ios-lg transition-all duration-300 border border-slate-200/70 flex flex-col justify-between group">
+          <div>
+            <div class="relative h-48 rounded-2xl bg-slate-100 overflow-hidden mb-4">
+              <img 
+                src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=600&q=80" 
+                alt="Multi-parameter Patient Monitor" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+              />
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[10px] font-bold text-teal-700 flex items-center gap-1 shadow-sm">
+                <i data-lucide="shield-check" class="w-3 h-3 text-teal-600"></i> TrustSEAL
+              </span>
+              <span class="absolute bottom-3 right-3 px-2 py-0.5 rounded-lg bg-black/60 backdrop-blur-md text-white text-[10px] font-semibold">
+                Bengaluru, KA
+              </span>
+            </div>
+
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-1">
+              <span>Bionics Bio-Medical</span>
+              <span class="flex items-center gap-0.5 text-amber-500 font-bold">
+                <i data-lucide="star" class="w-3 h-3 fill-amber-400"></i> 4.9
+              </span>
+            </div>
+
+            <h3 class="text-base font-bold text-slate-900 group-hover:text-brand-600 transition leading-snug">
+              12.1-Inch Multi-Parameter Patient Monitor (ECG, SpO2, NIBP)
+            </h3>
+
+            <div class="mt-2.5 flex items-baseline gap-2">
+              <span class="text-lg font-extrabold text-slate-900">₹28,500</span>
+              <span class="text-xs text-slate-400 font-medium">/ Unit</span>
+            </div>
+
+            <div class="text-[11px] text-slate-500 mt-1">
+              High Resolution Color TFT &bull; 72hr Trend Review &bull; Battery Backup
+            </div>
+          </div>
+
+          <div class="mt-5 pt-4 border-t border-slate-100 flex items-center gap-2">
+            <button 
+              type="button" 
+              onclick="openQuoteModal('Multi-Parameter Patient Monitor', '₹28,500 / Unit', 'Bionics Bio-Medical (Bengaluru)')" 
+              class="flex-1 py-2.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white text-xs font-bold shadow-sm transition active:scale-95 flex items-center justify-center gap-1.5"
+            >
+              <i data-lucide="tag" class="w-3.5 h-3.5"></i>
+              <span>Get Best Price</span>
+            </button>
+            <button type="button" onclick="showToast('Calling supplier: +91 99000 XXXXX')" class="p-2.5 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-600 transition">
+              <i data-lucide="phone-call" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- SECTOR 6: CHEMICALS, POLYMERS & RAW DYES   -->
+  <!-- ========================================== -->
+  <section id="sec-chemicals" class="py-12 bg-slate-100/60 border-t border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Sector Header -->
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
+        <div>
+          <div class="flex items-center gap-2 text-xs font-bold text-emerald-600 uppercase tracking-wider mb-1">
+            <i data-lucide="flask-conical" class="w-4 h-4"></i>
+            Process Industry &amp; Raw Compounds
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">Chemicals, Dyes &amp; Polymers</h2>
+          <p class="text-xs sm:text-sm text-slate-500 mt-1">Industrial epoxy resins, virgin polymer granules, water treatment chemicals &amp; solvents.</p>
+        </div>
+        <button type="button" class="trigger-rfq-modal self-start sm:self-auto text-xs font-bold text-brand-600 hover:text-brand-700 flex items-center gap-1 group">
+          <span>Post Requirement for Chemicals</span>
+          <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition"></i>
+        </button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Chemical 1 -->
+        <div class="bg-white rounded-3xl p-5 shadow-ios hover:shadow-ios-lg transition-all duration-300 border border-slate-200/70 flex flex-col justify-between group">
+          <div>
+            <div class="relative h-48 rounded-2xl bg-slate-100 overflow-hidden mb-4">
+              <img 
+                src="https://images.unsplash.com/photo-1603555501671-8f96b3fce8e4?auto=format&fit=crop&w=600&q=80" 
+                alt="Industrial Epoxy Resin" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+              />
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[10px] font-bold text-teal-700 flex items-center gap-1 shadow-sm">
+                <i data-lucide="shield-check" class="w-3 h-3 text-teal-600"></i> TrustSEAL
+              </span>
+              <span class="absolute bottom-3 right-3 px-2 py-0.5 rounded-lg bg-black/60 backdrop-blur-md text-white text-[10px] font-semibold">
+                Vapi, Gujarat
+              </span>
+            </div>
+
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-1">
+              <span>Gujarat Petrochem Ltd.</span>
+              <span class="flex items-center gap-0.5 text-amber-500 font-bold">
+                <i data-lucide="star" class="w-3 h-3 fill-amber-400"></i> 4.9
+              </span>
+            </div>
+
+            <h3 class="text-base font-bold text-slate-900 group-hover:text-brand-600 transition leading-snug">
+              Liquid Epoxy Resin &amp; Polyamide Hardener (Commercial Grade)
+            </h3>
+
+            <div class="mt-2.5 flex items-baseline gap-2">
+              <span class="text-lg font-extrabold text-slate-900">₹220</span>
+              <span class="text-xs text-slate-400 font-medium">/ Kilogram</span>
+            </div>
+
+            <div class="text-[11px] text-slate-500 mt-1">
+              MOQ: 200 Kg Drum &bull; Purity: 99.5% &bull; Coating &amp; Electrical Potting
+            </div>
+          </div>
+
+          <div class="mt-5 pt-4 border-t border-slate-100 flex items-center gap-2">
+            <button 
+              type="button" 
+              onclick="openQuoteModal('Liquid Epoxy Resin & Hardener', '₹220 / Kg', 'Gujarat Petrochem (Vapi)')" 
+              class="flex-1 py-2.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white text-xs font-bold shadow-sm transition active:scale-95 flex items-center justify-center gap-1.5"
+            >
+              <i data-lucide="tag" class="w-3.5 h-3.5"></i>
+              <span>Get Best Price</span>
+            </button>
+            <button type="button" onclick="showToast('Calling supplier: +91 98251 XXXXX')" class="p-2.5 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-600 transition">
+              <i data-lucide="phone-call" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Chemical 2 -->
+        <div class="bg-white rounded-3xl p-5 shadow-ios hover:shadow-ios-lg transition-all duration-300 border border-slate-200/70 flex flex-col justify-between group">
+          <div>
+            <div class="relative h-48 rounded-2xl bg-slate-100 overflow-hidden mb-4">
+              <img 
+                src="https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&w=600&q=80" 
+                alt="Virgin HDPE PP Polymer Granules" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+              />
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[10px] font-bold text-teal-700 flex items-center gap-1 shadow-sm">
+                <i data-lucide="shield-check" class="w-3 h-3 text-teal-600"></i> Verified Exporter
+              </span>
+              <span class="absolute bottom-3 right-3 px-2 py-0.5 rounded-lg bg-black/60 backdrop-blur-md text-white text-[10px] font-semibold">
+                Surat, Gujarat
+              </span>
+            </div>
+
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-1">
+              <span>Shree Balaji Polymers</span>
+              <span class="flex items-center gap-0.5 text-amber-500 font-bold">
+                <i data-lucide="star" class="w-3 h-3 fill-amber-400"></i> 4.8
+              </span>
+            </div>
+
+            <h3 class="text-base font-bold text-slate-900 group-hover:text-brand-600 transition leading-snug">
+              Virgin Injection Molding PP / HDPE Plastic Raw Granules
+            </h3>
+
+            <div class="mt-2.5 flex items-baseline gap-2">
+              <span class="text-lg font-extrabold text-slate-900">₹96</span>
+              <span class="text-xs text-slate-400 font-medium">/ Kilogram</span>
+            </div>
+
+            <div class="text-[11px] text-slate-500 mt-1">
+              MOQ: 1 Metric Ton (25kg bags) &bull; Reliance / IOCL Grade
+            </div>
+          </div>
+
+          <div class="mt-5 pt-4 border-t border-slate-100 flex items-center gap-2">
+            <button 
+              type="button" 
+              onclick="openQuoteModal('Virgin Injection PP / HDPE Granules', '₹96 / Kg', 'Shree Balaji Polymers (Surat)')" 
+              class="flex-1 py-2.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white text-xs font-bold shadow-sm transition active:scale-95 flex items-center justify-center gap-1.5"
+            >
+              <i data-lucide="tag" class="w-3.5 h-3.5"></i>
+              <span>Get Best Price</span>
+            </button>
+            <button type="button" onclick="showToast('Calling supplier: +91 98254 XXXXX')" class="p-2.5 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-600 transition">
+              <i data-lucide="phone-call" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Chemical 3 -->
+        <div class="bg-white rounded-3xl p-5 shadow-ios hover:shadow-ios-lg transition-all duration-300 border border-slate-200/70 flex flex-col justify-between group">
+          <div>
+            <div class="relative h-48 rounded-2xl bg-slate-100 overflow-hidden mb-4">
+              <img 
+                src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=600&q=80" 
+                alt="Industrial Water Treatment Chemicals" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+              />
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[10px] font-bold text-teal-700 flex items-center gap-1 shadow-sm">
+                <i data-lucide="shield-check" class="w-3 h-3 text-teal-600"></i> TrustSEAL
+              </span>
+              <span class="absolute bottom-3 right-3 px-2 py-0.5 rounded-lg bg-black/60 backdrop-blur-md text-white text-[10px] font-semibold">
+                Ankleshwar, Gujarat
+              </span>
+            </div>
+
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-1">
+              <span>PureAqua Chem Tech</span>
+              <span class="flex items-center gap-0.5 text-amber-500 font-bold">
+                <i data-lucide="star" class="w-3 h-3 fill-amber-400"></i> 4.9
+              </span>
+            </div>
+
+            <h3 class="text-base font-bold text-slate-900 group-hover:text-brand-600 transition leading-snug">
+              RO Antiscalant &amp; Boiler Water Treatment Formulations
+            </h3>
+
+            <div class="mt-2.5 flex items-baseline gap-2">
+              <span class="text-lg font-extrabold text-slate-900">₹110</span>
+              <span class="text-xs text-slate-400 font-medium">/ Litre</span>
+            </div>
+
+            <div class="text-[11px] text-slate-500 mt-1">
+              MOQ: 50 Litres &bull; NSF Certified &bull; High Recovery Formulations
+            </div>
+          </div>
+
+          <div class="mt-5 pt-4 border-t border-slate-100 flex items-center gap-2">
+            <button 
+              type="button" 
+              onclick="openQuoteModal('RO Antiscalant Water Treatment', '₹110 / Litre', 'PureAqua Chem (Ankleshwar)')" 
+              class="flex-1 py-2.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white text-xs font-bold shadow-sm transition active:scale-95 flex items-center justify-center gap-1.5"
+            >
+              <i data-lucide="tag" class="w-3.5 h-3.5"></i>
+              <span>Get Best Price</span>
+            </button>
+            <button type="button" onclick="showToast('Calling supplier: +91 98255 XXXXX')" class="p-2.5 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-600 transition">
+              <i data-lucide="phone-call" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- BUYER TRUST & ESCROW PROTECTION STRIP      -->
+  <!-- ========================================== -->
+  <section id="sec-trust" class="py-16 bg-white border-t border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs font-bold text-teal-600 uppercase tracking-widest">Safe &amp; Transparent B2B Trade</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-2">
+          Why 21 Crore+ Indian Businesses Trust IndiaBigMart
+        </h2>
+        <p class="text-slate-500 text-sm sm:text-base mt-2">
+          From direct factory verification to secure payment escrow, we eliminate trade risks.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Trust Feature 1 -->
+        <div class="p-6 rounded-3xl bg-[#f8fafc] border border-slate-200/80 hover:shadow-ios transition duration-300">
+          <div class="w-12 h-12 rounded-2xl bg-teal-50 text-teal-600 flex items-center justify-center mb-5">
+            <i data-lucide="shield-check" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-base font-bold text-slate-900 mb-2">TrustSEAL Verification</h3>
+          <p class="text-xs text-slate-500 leading-relaxed">
+            Suppliers verified through physical site audits, business licenses, GST checks, and manufacturing capacity reviews.
+          </p>
+        </div>
+
+        <!-- Trust Feature 2 -->
+        <div class="p-6 rounded-3xl bg-[#f8fafc] border border-slate-200/80 hover:shadow-ios transition duration-300">
+          <div class="w-12 h-12 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center mb-5">
+            <i data-lucide="lock" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-base font-bold text-slate-900 mb-2">Pay with IndiaBigMart</h3>
+          <p class="text-xs text-slate-500 leading-relaxed">
+            100% Escrow buyer protection. Funds are held safely and only released once goods are delivered and inspected.
+          </p>
+        </div>
+
+        <!-- Trust Feature 3 -->
+        <div class="p-6 rounded-3xl bg-[#f8fafc] border border-slate-200/80 hover:shadow-ios transition duration-300">
+          <div class="w-12 h-12 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center mb-5">
+            <i data-lucide="file-text" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-base font-bold text-slate-900 mb-2">Instant Quotations (RFQ)</h3>
+          <p class="text-xs text-slate-500 leading-relaxed">
+            Post your custom requirement once and receive competing quotes from 3 to 5 verified manufacturers within hours.
+          </p>
+        </div>
+
+        <!-- Trust Feature 4 -->
+        <div class="p-6 rounded-3xl bg-[#f8fafc] border border-slate-200/80 hover:shadow-ios transition duration-300">
+          <div class="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center mb-5">
+            <i data-lucide="globe-2" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-base font-bold text-slate-900 mb-2">Verified Exporters</h3>
+          <p class="text-xs text-slate-500 leading-relaxed">
+            Connect directly with verified Indian exporters shipping industrial machinery, textiles &amp; goods to 120+ countries.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- SELLER ONBOARDING CTA (Apple Dark Glass)   -->
+  <!-- ========================================== -->
+  <section id="sell-section" class="py-14 bg-slate-950 text-white relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900 to-indigo-950/60 pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <div class="lg:col-span-7 space-y-4">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-semibold">
+            <i data-lucide="trending-up" class="w-3.5 h-3.5"></i> Join 87 Lakh+ Suppliers
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white leading-tight">
+            Grow Your Business Online with India's #1 B2B Network
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base leading-relaxed max-w-xl">
+            List your products, receive high-intent buyer inquiries daily from every district in India, and expand your distribution across 120+ global export markets.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-6 pt-2 text-xs font-medium text-slate-300">
+            <div class="flex items-center gap-2">
+              <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i>
+              <span>Zero Joining Fees</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i>
+              <span>Instant WhatsApp Leads</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i>
+              <span>Dedicated Account Manager</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="bg-white/10 backdrop-blur-xl border border-white/15 rounded-3xl p-6 sm:p-8 shadow-2xl">
+            <h3 class="text-lg font-bold text-white mb-1">Create Free Seller Account</h3>
+            <p class="text-xs text-slate-300 mb-5">Enter your mobile number to start receiving buyer inquiries.</p>
+
+            <form id="seller-quick-form" class="space-y-4">
+              <div>
+                <label class="block text-xs font-medium text-slate-300 mb-1">Mobile Number</label>
+                <div class="relative flex items-center">
+                  <span class="absolute left-3.5 text-xs font-bold text-slate-400">+91</span>
+                  <input 
+                    type="tel" 
+                    required 
+                    maxlength="10" 
+                    placeholder="Enter 10-digit mobile" 
+                    class="w-full pl-12 pr-4 py-3 rounded-2xl bg-white/10 border border-white/20 text-white placeholder-slate-400 text-xs font-medium focus:bg-white/20 focus:border-brand-500 outline-none transition"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-medium text-slate-300 mb-1">Company / Business Name</label>
+                <input 
+                  type="text" 
+                  required 
+                  placeholder="e.g. Apex Industries Pvt Ltd" 
+                  class="w-full px-4 py-3 rounded-2xl bg-white/10 border border-white/20 text-white placeholder-slate-400 text-xs font-medium focus:bg-white/20 focus:border-brand-500 outline-none transition"
+                />
+              </div>
+
+              <button type="submit" class="w-full py-3.5 rounded-2xl bg-brand-500 hover:bg-brand-600 text-white text-xs font-bold shadow-lg shadow-brand-500/30 active:scale-[0.98] transition flex items-center justify-center gap-2">
+                <span>Start Selling on IndiaBigMart</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- MAJOR SOURCING HUBS & CITIES NAVIGATION    -->
+  <!-- ========================================== -->
+  <section class="py-12 bg-white border-t border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between mb-6">
+        <div>
+          <h3 class="text-lg font-bold text-slate-900 tracking-tight">Top Sourcing Hubs &amp; Industrial Clusters</h3>
+          <p class="text-xs text-slate-500">Explore manufacturers and wholesalers by state and industrial city.</p>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-700">
+        <a href="#sec-machinery" class="px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200/80 transition">Delhi NCR Sourcing</a>
+        <a href="#sec-packaging" class="px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200/80 transition">Mumbai Industrial Area</a>
+        <a href="#sec-chemicals" class="px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200/80 transition">Ahmedabad GIDC</a>
+        <a href="#sec-construction" class="px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200/80 transition">Surat Textile Hub</a>
+        <a href="#sec-machinery" class="px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200/80 transition">Pune Auto Cluster</a>
+        <a href="#sec-machinery" class="px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200/80 transition">Rajkot CNC Machinery</a>
+        <a href="#sec-electrical" class="px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200/80 transition">Coimbatore Motors &amp; Pumps</a>
+        <a href="#sec-construction" class="px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200/80 transition">Ludhiana Tools &amp; Hardware</a>
+        <a href="#sec-electrical" class="px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200/80 transition">Chennai Auto Components</a>
+        <a href="#sec-pharma" class="px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200/80 transition">Hyderabad Bulk Drugs &amp; Pharma</a>
+        <a href="#sec-electrical" class="px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200/80 transition">Bengaluru Electronics</a>
+        <a href="#sec-chemicals" class="px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200/80 transition">Vapi &amp; Ankleshwar Chemicals</a>
+      </div>
+    </div>
+  </section>
+    </div> <!-- /#home-view -->
+
+    <!-- ========================================== -->
+    <!-- VIEW 2: VENDOR & SUPPLIER LISTING VIEW     -->
+    <!-- ========================================== -->
+    <div id="listing-view" class="hidden min-h-[70vh] pb-16">
+      
+      <!-- Top Sticky Breadcrumb, Category Header & Quick Filters Bar -->
+      <div class="bg-white/95 backdrop-blur-xl border-b border-slate-200/80 sticky top-20 z-30 shadow-ios-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5">
+          
+          <!-- Breadcrumb & Top Actions -->
+          <div class="flex items-center justify-between gap-4">
+            <div class="flex items-center gap-2 text-xs text-slate-500 overflow-x-auto no-scrollbar py-0.5">
+              <button id="back-to-home-btn" type="button" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold transition shrink-0 active:scale-95">
+                <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i>
+                <span>Home</span>
+              </button>
+              <span class="text-slate-300">/</span>
+              <span id="listing-breadcrumb-parent" class="text-slate-600 truncate max-w-[140px] sm:max-w-none">God &amp; Goddess Statues</span>
+              <span class="text-slate-300">/</span>
+              <span id="listing-breadcrumb-current" class="font-bold text-slate-900 truncate max-w-[160px] sm:max-w-none">Vastu Accessories</span>
+            </div>
+
+            <!-- View Switcher (Grid vs List) -->
+            <div class="flex items-center gap-1.5 bg-slate-100 p-1 rounded-2xl shrink-0">
+              <span class="text-[11px] font-semibold text-slate-400 px-2 hidden sm:inline">View by:</span>
+              <button id="view-mode-grid" type="button" title="Grid View" class="p-1.5 rounded-xl bg-white text-slate-900 shadow-sm transition">
+                <i data-lucide="layout-grid" class="w-4 h-4"></i>
+              </button>
+              <button id="view-mode-list" type="button" title="List View" class="p-1.5 rounded-xl text-slate-500 hover:text-slate-900 transition">
+                <i data-lucide="list" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Category Title & Verified Products Count -->
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between mt-3 gap-2">
+            <div class="flex items-baseline gap-3 flex-wrap">
+              <h1 id="listing-title" class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                Vastu Accessories
+              </h1>
+              <span id="listing-count" class="text-xs font-semibold text-slate-500">
+                1,000+ products available
+              </span>
+            </div>
+            
+            <div class="text-xs text-teal-700 font-semibold flex items-center gap-1.5 bg-teal-50 px-2.5 py-1 rounded-full border border-teal-200 self-start sm:self-auto">
+              <i data-lucide="shield-check" class="w-3.5 h-3.5 text-teal-600"></i>
+              <span>All Suppliers TrustSEAL &amp; GST Verified</span>
+            </div>
+          </div>
+
+          <!-- Quick Filter Pills (Horizontal Scrollable Chips) -->
+          <div class="flex items-center gap-2 mt-3.5 overflow-x-auto no-scrollbar text-xs font-medium pb-1" id="listing-filter-pills-row">
+            <button type="button" class="shrink-0 px-3.5 py-1.5 rounded-xl bg-slate-900 text-white flex items-center gap-1.5 shadow-sm">
+              <i data-lucide="sliders-horizontal" class="w-3.5 h-3.5"></i>
+              <span>Filters</span>
+            </button>
+            <!-- Dynamic Category Pills Rendered by JS -->
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Main Listing Body -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        
+        <!-- Results Summary & Sorting Bar -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6 bg-white p-3.5 rounded-2xl border border-slate-200/80 shadow-ios-sm">
+          <div class="text-xs text-slate-600 flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span>Showing verified manufacturers &amp; wholesale suppliers with direct pricing</span>
+          </div>
+
+          <div class="flex items-center gap-3 text-xs">
+            <span class="text-slate-400 font-medium">Sort by:</span>
+            <select id="listing-sort-select" class="px-2.5 py-1.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-700 font-semibold outline-none focus:border-brand-500">
+              <option value="relevance">Relevance</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="rating">Top Rated Suppliers</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Vendor & Product Cards (Grid/List Mode) -->
+        <div id="vendor-cards-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 transition-all duration-300">
+          <!-- Dynamically Injected by JavaScript -->
+        </div>
+
+        <!-- Pagination Bar -->
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mt-10 pt-6 border-t border-slate-200/80 text-xs text-slate-500">
+          <div>
+            Showing <strong class="text-slate-800">1 - 8</strong> of <strong class="text-slate-800">1,240+</strong> verified vendors
+          </div>
+          <div class="flex items-center gap-1.5">
+            <button type="button" class="px-3.5 py-2 rounded-xl border border-slate-200 text-slate-600 hover:bg-slate-50 font-semibold transition">Previous</button>
+            <button type="button" class="w-9 h-9 rounded-xl bg-slate-900 text-white font-bold flex items-center justify-center">1</button>
+            <button type="button" class="w-9 h-9 rounded-xl border border-slate-200 text-slate-700 hover:bg-slate-50 font-semibold flex items-center justify-center transition">2</button>
+            <button type="button" class="w-9 h-9 rounded-xl border border-slate-200 text-slate-700 hover:bg-slate-50 font-semibold flex items-center justify-center transition">3</button>
+            <button type="button" class="px-3.5 py-2 rounded-xl border border-slate-200 text-slate-600 hover:bg-slate-50 font-semibold transition">Next</button>
+          </div>
+        </div>
+
+        <!-- Bottom Custom RFQ Assistance Card -->
+        <div class="mt-10 rounded-3xl bg-gradient-to-r from-teal-900 via-slate-900 to-indigo-950 p-6 sm:p-8 text-white relative overflow-hidden shadow-ios-lg">
+          <div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+            <div class="space-y-2 max-w-xl">
+              <span class="text-[11px] font-bold text-amber-300 uppercase tracking-widest">Fast B2B Sourcing Support</span>
+              <h3 class="text-xl sm:text-2xl font-bold tracking-tight">Can't find the exact product specification or quantity?</h3>
+              <p class="text-xs sm:text-sm text-slate-300">
+                Post your custom requirement now. Our automated matchmaking engine will connect you with 3 to 5 verified manufacturers with custom quotations.
+              </p>
+            </div>
+            <button type="button" class="trigger-rfq-modal shrink-0 px-6 py-3.5 rounded-2xl bg-teal-500 hover:bg-teal-600 active:scale-95 text-white text-xs font-bold shadow-lg shadow-teal-500/20 transition flex items-center gap-2">
+              <i data-lucide="file-plus" class="w-4 h-4"></i>
+              <span>Post Requirement for Best Quotes</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+  <footer id="footer-section" class="bg-slate-900 text-slate-400 text-xs pt-16 pb-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="col-span-2 space-y-4">
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-xl bg-gradient-to-tr from-brand-600 to-amber-400 flex items-center justify-center text-white font-extrabold text-sm shadow">
+              I
+            </div>
+            <span class="text-lg font-bold text-white tracking-tight">India<span class="text-brand-500">BigMart</span> B2B</span>
+          </div>
+          <p class="text-slate-400 leading-relaxed text-xs max-w-sm">
+            India's premier digital B2B marketplace bridging 21 Cr+ buyers with over 87 Lakh+ manufacturers, exporters, and wholesale traders across India.
+          </p>
+          <div class="flex items-center gap-3 text-slate-400 pt-2">
+            <a href="#" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-slate-700 flex items-center justify-center transition text-white">
+              <i data-lucide="twitter" class="w-4 h-4"></i>
+            </a>
+            <a href="#" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-slate-700 flex items-center justify-center transition text-white">
+              <i data-lucide="linkedin" class="w-4 h-4"></i>
+            </a>
+            <a href="#" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-slate-700 flex items-center justify-center transition text-white">
+              <i data-lucide="facebook" class="w-4 h-4"></i>
+            </a>
+            <a href="#" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-slate-700 flex items-center justify-center transition text-white">
+              <i data-lucide="youtube" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: For Buyers -->
+        <div class="space-y-3">
+          <h4 class="text-xs font-bold text-white uppercase tracking-wider">For Buyers</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="trigger-rfq-modal hover:text-white transition">Post Requirement</a></li>
+            <li><a href="#sec-construction" class="hover:text-white transition">Browse Categories</a></li>
+            <li><a href="#sec-machinery" class="hover:text-white transition">Search Products &amp; Machines</a></li>
+            <li><a href="#sec-trust" class="hover:text-white transition">Pay with IndiaBigMart</a></li>
+            <li><a href="#" onclick="showToast('Connecting to buyer support helpline...')" class="hover:text-white transition">Buyer Toolkit</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: For Sellers -->
+        <div class="space-y-3">
+          <h4 class="text-xs font-bold text-white uppercase tracking-wider">For Sellers</h4>
+          <ul class="space-y-2">
+            <li><a href="#sell-section" class="hover:text-white transition">Start Selling</a></li>
+            <li><a href="#sell-section" class="hover:text-white transition">TrustSEAL Verification</a></li>
+            <li><a href="#" onclick="showToast('Lead manager opening...')" class="hover:text-white transition">Buyer Inquiries</a></li>
+            <li><a href="#" onclick="showToast('Exporter program info...')" class="hover:text-white transition">Export Opportunities</a></li>
+            <li><a href="#" class="hover:text-white transition">Success Stories</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Quick Links -->
+        <div class="space-y-3">
+          <h4 class="text-xs font-bold text-white uppercase tracking-wider">Company &amp; Help</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white transition">About Us</a></li>
+            <li><a href="#" class="hover:text-white transition">Customer Care</a></li>
+            <li><a href="#" class="hover:text-white transition">Complaints &amp; Grievance</a></li>
+            <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-white transition">Terms of Use</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Credits & Payment Methods -->
+      <div class="pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
+        <div>
+          &copy; 2026 IndiaBigMart B2B Marketplace. All rights reserved.
+        </div>
+        <div class="flex items-center gap-3">
+          <span>Supported Payments:</span>
+          <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 font-bold text-[10px]">UPI</span>
+          <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 font-bold text-[10px]">RuPay</span>
+          <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 font-bold text-[10px]">NetBanking</span>
+          <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 font-bold text-[10px]">NEFT / RTGS</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================== -->
+  <!-- MODAL 1: GET BEST PRICE (Quote Sheet)      -->
+  <!-- ========================================== -->
+  <div id="quote-modal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-ios-modal border border-slate-200/80 animate-in fade-in zoom-in-95 duration-200 relative">
+      
+      <!-- Close Button -->
+      <button id="close-quote-modal" type="button" class="absolute top-5 right-5 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-500 transition">
+        <i data-lucide="x" class="w-4 h-4"></i>
+      </button>
+
+      <div class="flex items-center gap-2 mb-2">
+        <span class="px-2.5 py-0.5 rounded-full bg-teal-50 text-teal-700 text-[10px] font-bold uppercase tracking-wider">Fast Quotation</span>
+        <span class="text-xs text-slate-400">&bull; Direct Manufacturer Price</span>
+      </div>
+
+      <h3 id="modal-product-title" class="text-lg sm:text-xl font-bold text-slate-900 leading-snug">
+        Hydraulic Self-Loading Concrete Mixer
+      </h3>
+
+      <div class="flex items-center gap-3 mt-1.5 mb-5 text-xs text-slate-500">
+        <span class="font-bold text-brand-600 text-sm" id="modal-product-price">₹1,45,000 / Unit</span>
+        <span>&bull;</span>
+        <span id="modal-supplier-name" class="font-medium text-slate-700">Bharat Heavy Infra</span>
+      </div>
+
+      <form id="quote-form" class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Quantity Required</label>
+          <div class="grid grid-cols-2 gap-3">
+            <input 
+              type="number" 
+              min="1" 
+              value="1" 
+              required 
+              class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-xs font-medium text-slate-800 focus:bg-white focus:border-brand-500 outline-none transition" 
+            />
+            <select class="w-full px-3 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-xs font-medium text-slate-800 focus:bg-white focus:border-brand-500 outline-none transition">
+              <option>Units / Pieces</option>
+              <option>Metric Ton</option>
+              <option>Sets</option>
+              <option>Kg</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Your Mobile Number (For Quotation &amp; Call)</label>
+          <div class="relative flex items-center">
+            <span class="absolute left-3.5 text-xs font-bold text-slate-500">+91</span>
+            <input 
+              id="quote-mobile"
+              type="tel" 
+              required 
+              maxlength="10" 
+              placeholder="Enter 10-digit mobile number" 
+              class="w-full pl-12 pr-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-xs font-medium text-slate-800 placeholder-slate-400 focus:bg-white focus:border-brand-500 outline-none transition" 
+            />
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Delivery Pincode / City</label>
+          <input 
+            type="text" 
+            placeholder="e.g. 400001 or Mumbai" 
+            class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-xs font-medium text-slate-800 focus:bg-white focus:border-brand-500 outline-none transition" 
+          />
+        </div>
+
+        <div class="text-[11px] text-slate-400 flex items-center gap-1.5 pt-1">
+          <i data-lucide="lock" class="w-3.5 h-3.5 text-teal-600"></i>
+          Your phone number will only be shared with verified sellers.
+        </div>
+
+        <button type="submit" class="w-full py-3 rounded-2xl bg-teal-600 hover:bg-teal-700 text-white text-xs font-bold shadow-md shadow-teal-600/20 active:scale-[0.98] transition">
+          Submit &amp; Request Best Price
+        </button>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- MODAL 2: POST REQUIREMENT (RFQ MODAL)      -->
+  <!-- ========================================== -->
+  <div id="rfq-modal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-ios-modal border border-slate-200/80 animate-in fade-in zoom-in-95 duration-200 relative">
+      
+      <!-- Close Button -->
+      <button id="close-rfq-modal" type="button" class="absolute top-5 right-5 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-500 transition">
+        <i data-lucide="x" class="w-4 h-4"></i>
+      </button>
+
+      <div class="w-10 h-10 rounded-2xl bg-teal-50 text-teal-600 flex items-center justify-center mb-3">
+        <i data-lucide="file-plus" class="w-5 h-5"></i>
+      </div>
+
+      <h3 class="text-xl font-bold text-slate-900 leading-snug">
+        Post Your Buying Requirement
+      </h3>
+      <p class="text-xs text-slate-500 mb-5">
+        Describe what you need and get competitive quotes from top verified suppliers.
+      </p>
+
+      <form id="rfq-form" class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Product / Service Name</label>
+          <input 
+            type="text" 
+            required 
+            placeholder="e.g. CNC Lathe, Fly Ash Bricks, Solar Inverters" 
+            class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-xs font-medium text-slate-800 focus:bg-white focus:border-brand-500 outline-none transition" 
+          />
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Estimated Quantity</label>
+            <input 
+              type="number" 
+              min="1" 
+              value="1" 
+              required 
+              class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-xs font-medium text-slate-800 focus:bg-white focus:border-brand-500 outline-none transition" 
+            />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Unit</label>
+            <select class="w-full px-3 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-xs font-medium text-slate-800 focus:bg-white focus:border-brand-500 outline-none transition">
+              <option>Units / Pieces</option>
+              <option>Metric Ton</option>
+              <option>Kg</option>
+              <option>Litres</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Requirement Details (Optional)</label>
+          <textarea 
+            rows="2" 
+            placeholder="Add specifications, brand preference, or delivery timeline..." 
+            class="w-full px-3.5 py-2 rounded-xl bg-slate-50 border border-slate-200 text-xs font-medium text-slate-800 focus:bg-white focus:border-brand-500 outline-none transition"
+          ></textarea>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Your Mobile Number</label>
+          <div class="relative flex items-center">
+            <span class="absolute left-3.5 text-xs font-bold text-slate-500">+91</span>
+            <input 
+              type="tel" 
+              required 
+              maxlength="10" 
+              placeholder="Enter 10-digit mobile" 
+              class="w-full pl-12 pr-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-xs font-medium text-slate-800 placeholder-slate-400 focus:bg-white focus:border-brand-500 outline-none transition" 
+            />
+          </div>
+        </div>
+
+        <button type="submit" class="w-full py-3 rounded-2xl bg-teal-600 hover:bg-teal-700 text-white text-xs font-bold shadow-md shadow-teal-600/20 active:scale-[0.98] transition">
+          Post Requirement &amp; Get Quotes
+        </button>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- MOBILE DRAWER MENU                         -->
+  <!-- ========================================== -->
+  <div id="mobile-drawer" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden lg:hidden">
+    <div class="w-4/5 max-w-sm h-full bg-white shadow-2xl p-6 flex flex-col justify-between overflow-y-auto">
+      <div>
+        <div class="flex items-center justify-between pb-5 border-b border-slate-100">
+          <div class="flex items-center gap-2">
+            <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-brand-600 to-amber-400 flex items-center justify-center text-white font-extrabold text-sm shadow">
+              I
+            </div>
+            <span class="text-base font-bold text-slate-900">IndiaBigMart B2B</span>
+          </div>
+          <button id="close-mobile-drawer" class="p-2 rounded-xl text-slate-400 hover:bg-slate-100">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+
+        <div class="py-6 space-y-4 text-sm font-semibold text-slate-700">
+          <a href="#sec-construction" class="flex items-center gap-3 p-2.5 rounded-2xl hover:bg-slate-100">
+            <i data-lucide="hard-hat" class="w-4 h-4 text-amber-500"></i>
+            <span>Building &amp; Construction</span>
+          </a>
+          <a href="#sec-machinery" class="flex items-center gap-3 p-2.5 rounded-2xl hover:bg-slate-100">
+            <i data-lucide="cog" class="w-4 h-4 text-blue-500"></i>
+            <span>Industrial Machinery</span>
+          </a>
+          <a href="#sec-packaging" class="flex items-center gap-3 p-2.5 rounded-2xl hover:bg-slate-100">
+            <i data-lucide="package" class="w-4 h-4 text-indigo-500"></i>
+            <span>Packaging Machines</span>
+          </a>
+          <a href="#sec-electrical" class="flex items-center gap-3 p-2.5 rounded-2xl hover:bg-slate-100">
+            <i data-lucide="zap" class="w-4 h-4 text-yellow-500"></i>
+            <span>Electrical &amp; Solar</span>
+          </a>
+          <a href="#sec-pharma" class="flex items-center gap-3 p-2.5 rounded-2xl hover:bg-slate-100">
+            <i data-lucide="activity" class="w-4 h-4 text-rose-500"></i>
+            <span>Medical &amp; Pharma</span>
+          </a>
+          <a href="#sec-chemicals" class="flex items-center gap-3 p-2.5 rounded-2xl hover:bg-slate-100">
+            <i data-lucide="flask-conical" class="w-4 h-4 text-emerald-500"></i>
+            <span>Chemicals &amp; Polymers</span>
+          </a>
+          <a href="#sec-trust" class="flex items-center gap-3 p-2.5 rounded-2xl hover:bg-slate-100">
+            <i data-lucide="shield-check" class="w-4 h-4 text-teal-500"></i>
+            <span>Pay with IndiaBigMart</span>
+          </a>
+          <a href="#sell-section" class="flex items-center gap-3 p-2.5 rounded-2xl hover:bg-slate-100">
+            <i data-lucide="store" class="w-4 h-4 text-brand-500"></i>
+            <span>Start Selling</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="pt-6 border-t border-slate-100">
+        <button type="button" class="trigger-rfq-modal w-full py-3 rounded-2xl bg-teal-600 text-white font-bold text-xs shadow-sm mb-3">
+          Post Requirement
+        </button>
+        <button type="button" onclick="showToast('Sign in popup opened')" class="w-full py-3 rounded-2xl border border-slate-200 text-slate-800 font-bold text-xs hover:bg-slate-50">
+          Sign In / Register
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- FLOATING iOS TOAST NOTIFICATION            -->
+  <!-- ========================================== -->
+  <div id="ios-toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 translate-y-24 opacity-0 pointer-events-none transition-all duration-300 ease-out">
+    <div class="ios-glass-dark text-white px-5 py-3 rounded-full shadow-2xl flex items-center gap-3 text-xs font-semibold border border-white/20">
+      <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+      <span id="ios-toast-msg">Action performed successfully</span>
+    </div>
+  </div>
+
+  <!-- Client Script -->
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
